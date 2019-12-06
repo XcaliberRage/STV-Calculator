@@ -43,8 +43,12 @@ def Make_Ballots(candidates, predictions):
                 for pGroup in predictions[prediction].prefs:
                     # At end of list we just dump this into the end of prefs (we use it to trigger Ballot deletion)
                     if pGroup == 'ABSTAIN':
-                        order.append('ABSTAIN')
-                    else:
+                        order.append('ABSTAIN')                      
+                    elif pGroup != 'other':
+                        # I check to ensure that the party is not 'other'
+                        # This is because I will assume 'other' voters will not
+                        # Pick any further memebrs (including from other)
+                        # Largely because 'other' parties have no guarnteed association
                         for candy in parties[pGroup]:
                             # We avoid duplicates
                             if candy != candidate:
@@ -75,6 +79,8 @@ def get_Parties(candidates):
         # When the party is new, you have to create it, i.e. if you try to directly append
         # to the list in parties[party] you'll just get a KeyError:
         # So we'll first check if it exists and if not create a 1 item list and plop it in
+        # I'm slipping in a clause here to prevent votes for 'other' candidates transferring
+        # I defintely can't make any predictions in that regard
         party = candidates[target].party
         if party in parties:
             parties[party].append(target)
