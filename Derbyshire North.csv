@@ -1,0 +1,48 @@
+Seats:,5,,,,
+Candidates:,,,,,
+,MP,Party,Original,,
+1,Andrew Bingham,con,24431,,
+2,Patrick McLoughlin,con,29744,,
+3,Lee Rowley,con,24783,,
+4,Spencer Pitfield,con,16661,,
+5,Helen Harrison,con,18865,,
+6,Matthew Buckler,green,1002,,
+7,David Kesteven,green,719,,
+8,David Wadsworth,green,777,,
+9,Ruth George,lab,26753,,
+10,Andy Botham,lab,15417,,
+11,Natascha Engel,lab,21923,,
+12,Toby Perkins,lab,26266,,
+13,Dennis Skinner,lab,24153,,
+14,Charles Lawley,ld,2669,,
+15,Andrew Hollyer,ld,3126,,
+16,David Lomax,ld,1390,,
+17,Tom Snowdon,ld,2612,,
+18,Ross Shipman,ld,1372,,
+19,Robin Greenwood,other,282,,
+20,James Bush,ukip,1565,,
+21,Stuart Bent,ukip,1611,,
+22,Philip Rose,ukip,2129,,
+Preferences:,,,,,
+ID,%,1,2,3,
+1,0.30,con,-,-,-
+2,0.20,con,ld,-,-
+3,0.50,con,ukip,-,-
+4,0.20,green,-,-,-
+5,0.25,green,ld,-,-
+6,0.25,green,ld,lab,-
+7,0.30,green,lab,-,-
+8,0.10,green,lab,ld,-
+9,0.20,lab,-,-,-
+10,0.30,lab,green,-,-
+11,0.15,lab,green,ld,-
+12,0.15,lab,ld,-,-
+13,0.20,lab,ld,green,-
+14,0.25,ld,-,-,-
+15,0.25,ld,lab,-,-
+16,0.10,ld,lab,green,-
+17,0.20,ld,green,-,-
+18,0.20,ld,green,lab,-
+19,0.50,ukip,-,-,-
+20,0.50,ukip,con,-,-
+21,1.00,other,-,-,-
