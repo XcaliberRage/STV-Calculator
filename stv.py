@@ -64,7 +64,7 @@ def Simulate_STV(superConstituency):
     balLen = len(ballots)
 
     # Create a modifiable list of candidates using their name as a key and their originaly votes as their votes
-    candidatesLive = {candidate: candidates[candidate].votes for candidate in candidates}
+    candidatesLive = {candidate: 0 for candidate in candidates}
     for cand in candidatesLive:
         print(cand, candidatesLive[cand])
     print()
