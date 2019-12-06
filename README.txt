@@ -20,3 +20,5 @@ The ballots are then tracked in lumps using their ratio against their first choi
 
 
 TODO: Save a new .csv file reporting the outcome
+
+An example of the current CSV files used has been provided
