@@ -1,7 +1,7 @@
 This program is a method to handle STV voting
 
 stv.py expects to find a series of .csv files
-Each of which will be specifically formatted to present voting data for a Super constituence
+Each of which will be specifically formatted to present voting data for a Super constituency
 This includes:*
 Number of intended seats
 A Table of Candidates with their party memebership and unique ID (counting integer)
