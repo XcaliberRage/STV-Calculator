@@ -228,6 +228,8 @@ def placements(candidatesLive, ballots, dQ):
                 
             killAbstains(ballots)
             del candidatesLive[best]
+            if len(candidatesLive) == 0:
+                break
         else:
             break
 
