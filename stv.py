@@ -27,9 +27,8 @@ def main():
     # For each csv file, generate an output of results
     for superConstituency in csvFiles:
         Simulate_STV(superConstituency)
+        end = input("Press enter to continue")
         
-    end = input("Press enter to exit")
-            
 
 # The bulk operation, on each file we load the info, run the simulations and then save a csv file with the info
 def Simulate_STV(superConstituency):
