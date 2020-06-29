@@ -1,0 +1,651 @@
+original_con,county_name,super_con,region,country,type,electorate,valid_votes
+Basildon and Billericay,Essex,Essex South,East,England,Borough,69906,44128
+Bedford,Bedfordshire,Bedfordshire,East,England,Borough,71581,47301
+Braintree,Essex,Essex North East,East,England,County,75208,50499
+Brentwood and Ongar,Essex,Essex West,East,England,County,75255,52949
+Broadland,Norfolk,North East Norfolk,East,England,County,78151,56977
+Broxbourne,Hertfordshire,East Hertfordshire,East,England,Borough,73182,46706
+Bury St Edmunds,Suffolk,Suffolk,East,England,County,89644,61957
+Cambridge,Cambridgeshire,Cambridgeshire,East,England,Borough,79951,53729
+Castle Point,Essex,Essex South,East,England,Borough,69608,44277
+Central Suffolk and North Ipswich,Suffolk,Suffolk,East,England,County,80037,56250
+Chelmsford,Essex,Essex West,East,England,Borough,80394,57122
+Clacton,Essex,Essex North East,East,England,County,70930,43506
+Colchester,Essex,Essex North East,East,England,Borough,82625,53373
+Epping Forest,Essex,Essex West,East,England,County,74304,50268
+Great Yarmouth,Norfolk,North East Norfolk,East,England,County,71957,43462
+Harlow,Essex,Essex West,East,England,County,68078,43354
+Harwich and North Essex,Essex,Essex North East,East,England,County,74153,51963
+Hemel Hempstead,Hertfordshire,West Hertfordshire,East,England,County,74035,51271
+Hertford and Stortford,Hertfordshire,East Hertfordshire,East,England,County,81765,60094
+Hertsmere,Hertfordshire,West Hertfordshire,East,England,County,73971,52203
+Hitchin and Harpenden,Hertfordshire,West Hertfordshire,East,England,County,76323,58871
+Huntingdon,Cambridgeshire,Cambridgeshire,East,England,County,84657,59147
+Ipswich,Suffolk,Suffolk,East,England,Borough,75525,49579
+Luton North,Bedfordshire,Bedfordshire,East,England,Borough,68185,42589
+Luton South,Bedfordshire,Bedfordshire,East,England,Borough,69338,42064
+Maldon,Essex,Essex South,East,England,County,72438,50408
+Mid Bedfordshire,Bedfordshire,Bedfordshire,East,England,County,87795,64717
+Mid Norfolk,Norfolk,South Norfolk & Waveney,East,England,County,82203,56186
+North East Bedfordshire,Bedfordshire,Bedfordshire,East,England,County,90678,65018
+North East Cambridgeshire,Cambridgeshire,Cambridgeshire,East,England,County,83699,52964
+North East Hertfordshire,Hertfordshire,East Hertfordshire,East,England,County,76123,55327
+North Norfolk,Norfolk,North East Norfolk,East,England,County,70729,50823
+North West Cambridgeshire,Cambridgeshire,Cambridgeshire,East,England,County,94909,64533
+North West Norfolk,Norfolk,South Norfolk & Waveney,East,England,County,72080,46602
+Norwich North,Norfolk,North East Norfolk,East,England,Borough,67172,46285
+Norwich South,Norfolk,North East Norfolk,East,England,Borough,77845,51673
+Peterborough,Cambridgeshire,Cambridgeshire,East,England,Borough,72560,47801
+Rayleigh and Wickford,Essex,Essex South,East,England,County,78930,54901
+Rochford and Southend East,Essex,Essex South,East,England,County,75624,46136
+Saffron Walden,Essex,Essex West,East,England,County,87017,63086
+South Basildon and East Thurrock,Essex,Essex South,East,England,County,74441,45297
+South Cambridgeshire,Cambridgeshire,Cambridgeshire,East,England,County,87288,66929
+South East Cambridgeshire,Cambridgeshire,Cambridgeshire,East,England,County,86769,64385
+Southend West,Essex,Essex South,East,England,Borough,69043,46537
+South Norfolk,Norfolk,South Norfolk & Waveney,East,England,County,86214,62484
+South Suffolk,Suffolk,Suffolk,East,England,County,76201,53489
+South West Bedfordshire,Bedfordshire,Bedfordshire,East,England,County,79926,53307
+South West Hertfordshire,Hertfordshire,West Hertfordshire,East,England,County,80499,61191
+South West Norfolk,Norfolk,South Norfolk & Waveney,East,England,County,78455,51466
+St Albans,Hertfordshire,West Hertfordshire,East,England,County,73727,57599
+Stevenage,Hertfordshire,East Hertfordshire,East,England,County,71562,47683
+Suffolk Coastal,Suffolk,Suffolk,East,England,County,81910,58308
+Thurrock,Essex,Essex South,East,England,Borough,79659,47467
+Watford,Hertfordshire,West Hertfordshire,East,England,Borough,83359,58065
+Waveney,Suffolk,Suffolk,East,England,County,82791,51129
+Welwyn Hatfield,Hertfordshire,East Hertfordshire,East,England,County,74892,52053
+West Suffolk,Suffolk,Suffolk,East,England,County,80193,51437
+Witham,Essex,Essex North East,East,England,County,70402,49344
+Amber Valley,Derbyshire,Derbyshire South,East Midlands,England,County,69976,45567
+Ashfield,Nottinghamshire,Nottinghamshire North,East Midlands,England,County,78204,48980
+Bassetlaw,Nottinghamshire,Nottinghamshire North,East Midlands,England,County,80024,50841
+Bolsover,Derbyshire,Derbyshire North,East Midlands,England,County,74292,45938
+Boston and Skegness,Lincolnshire,Lincolnshire,East Midlands,England,County,69381,41696
+Bosworth,Leicestershire,Leicestershire & Rutland North,East Midlands,England,County,81542,56432
+Broxtowe,Nottinghamshire,Nottinghamshire South,East Midlands,England,County,73052,55272
+Charnwood,Leicestershire,Leicestershire & Rutland North,East Midlands,England,County,79534,55365
+Chesterfield,Derbyshire,Derbyshire North,East Midlands,England,Borough,71034,45186
+Corby,Northamptonshire,Northamptonshire,East Midlands,England,County,86153,60475
+Daventry,Northamptonshire,Northamptonshire,East Midlands,England,County,77423,57403
+Derby North,Derbyshire,Derbyshire South,East Midlands,England,Borough,73199,47017
+Derbyshire Dales,Derbyshire,Derbyshire North,East Midlands,England,County,65080,50016
+Derby South,Derbyshire,Derbyshire South,East Midlands,England,Borough,73062,42462
+Erewash,Derbyshire,Derbyshire South,East Midlands,England,County,72523,48814
+Gainsborough,Lincolnshire,Lincolnshire,East Midlands,England,County,76343,51046
+Gedling,Nottinghamshire,Nottinghamshire South,East Midlands,England,County,71336,49953
+Grantham and Stamford,Lincolnshire,Lincolnshire,East Midlands,England,County,81502,56003
+Harborough,Leicestershire,Leicester & Harborough,East Midlands,England,County,80151,57319
+High Peak,Derbyshire,Derbyshire North,East Midlands,England,County,74265,54173
+Kettering,Northamptonshire,Northamptonshire,East Midlands,England,County,73164,49361
+Leicester East,Leicestershire,Leicester & Harborough,East Midlands,England,Borough,78433,49421
+Leicester South,Leicestershire,Leicester & Harborough,East Midlands,England,Borough,77708,50147
+Leicester West,Leicestershire,Leicester & Harborough,East Midlands,England,Borough,64940,34775
+Lincoln,Lincolnshire,Lincolnshire,East Midlands,England,Borough,74942,50629
+Loughborough,Leicestershire,Leicestershire & Rutland North,East Midlands,England,County,79764,54631
+Louth and Horncastle,Lincolnshire,Lincolnshire,East Midlands,England,County,79634,52332
+Mansfield,Nottinghamshire,Nottinghamshire North,East Midlands,England,County,77131,49273
+Mid Derbyshire,Derbyshire,Derbyshire South,East Midlands,England,County,67442,49356
+Newark,Nottinghamshire,Nottinghamshire North,East Midlands,England,County,75850,54762
+Northampton North,Northamptonshire,Northamptonshire,East Midlands,England,Borough,58768,39539
+Northampton South,Northamptonshire,Northamptonshire,East Midlands,England,Borough,62163,40835
+North East Derbyshire,Derbyshire,Derbyshire North,East Midlands,England,County,72345,49217
+North West Leicestershire,Leicestershire,Leicestershire & Rutland North,East Midlands,England,County,78935,53821
+Nottingham East,Nottinghamshire,Nottinghamshire South,East Midlands,England,Borough,66262,40004
+Nottingham North,Nottinghamshire,Nottinghamshire South,East Midlands,England,Borough,66495,35320
+Nottingham South,Nottinghamshire,Nottinghamshire South,East Midlands,England,Borough,79485,48134
+Rushcliffe,Nottinghamshire,Nottinghamshire South,East Midlands,England,County,77047,60505
+Rutland and Melton,Leicestershire,Leicestershire & Rutland North,East Midlands,England,County,82705,58310
+Sherwood,Nottinghamshire,Nottinghamshire North,East Midlands,England,County,77888,52709
+Sleaford and North Hykeham,Lincolnshire,Lincolnshire,East Midlands,England,County,94761,66554
+South Derbyshire,Derbyshire,Derbyshire South,East Midlands,England,County,79331,53381
+South Holland and The Deepings,Lincolnshire,Lincolnshire,East Midlands,England,County,75975,49179
+South Leicestershire,Leicestershire,Leicester & Harborough,East Midlands,England,County,80520,57469
+South Northamptonshire,Northamptonshire,Northamptonshire,East Midlands,England,County,90842,66908
+Wellingborough,Northamptonshire,Northamptonshire,East Midlands,England,County,80765,51913
+Barking,London,London North East,London,England,Borough,77953,44499
+Battersea,London,London Central West,London,England,Borough,79350,59977
+Beckenham,London,London South East,London,England,Borough,68662,50555
+Bermondsey and Old Southwark,London,London Central South,London,England,Borough,93248,58615
+Bethnal Green and Bow,London,London Central North,London,England,Borough,88262,60562
+Bexleyheath and Crayford,London,London South East,London,England,Borough,65466,43246
+Brent Central,London,London Central West,London,England,Borough,84032,49132
+Brentford and Isleworth,London,London Mid West,London,England,Borough,85775,58326
+Brent North,London,London North west,London,England,Borough,83788,51879
+Bromley and Chislehurst,London,London South East,London,England,Borough,66697,45566
+Camberwell and Peckham,London,London Central South,London,England,Borough,88971,56492
+Carshalton and Wallington,London,London Middle South,London,England,Borough,72941,49098
+Chelsea and Fulham,London,London Central West,London,England,Borough,67110,46821
+Chingford and Woodford Green,London,London Middle North,London,England,County,65393,48444
+Chipping Barnet,London,London Middle North,London,England,Borough,79960,57569
+Cities Of London and Westminster,London,London Central North,London,England,Borough,63700,42723
+Croydon Central,London,London Middle South,London,England,Borough,81407,54045
+Croydon North,London,London Middle South,London,England,Borough,88468,55609
+Croydon South,London,London Middle South,London,England,Borough,83982,59358
+Dagenham and Rainham,London,London North East,London,England,Borough,71045,43735
+Dulwich and West Norwood,London,London Central South,London,England,Borough,80331,55778
+Ealing Central and Acton,London,London Central West,London,England,Borough,75510,54807
+Ealing North,London,London Mid West,London,England,Borough,74473,49631
+"Ealing, Southall",London,London Mid West,London,England,Borough,64581,42217
+East Ham,London,London North East,London,England,Borough,88319,54628
+Edmonton,London,London Middle North,London,England,Borough,65747,40341
+Eltham,London,London South East,London,England,Borough,64086,43689
+Enfield North,London,London Middle North,London,England,Borough,68301,45050
+"Enfield, Southgate",London,London Middle North,London,England,Borough,65525,47276
+Erith and Thamesmead,London,London South East,London,England,Borough,65399,41384
+Feltham and Heston,London,London Mid West,London,England,Borough,80934,47811
+Finchley and Golders Green,London,London North west,London,England,Borough,77573,55109
+Greenwich and Woolwich,London,London Central South,London,England,Borough,79997,53120
+Hackney North and Stoke Newington,London,London Central North,London,England,Borough,92462,56864
+Hackney South and Shoreditch,London,London Central North,London,England,Borough,89387,54439
+Hammersmith,London,London Central West,London,England,Borough,74759,51966
+Hampstead and Kilburn,London,London Central West,London,England,Borough,86571,57385
+Harrow East,London,London North west,London,England,Borough,72106,49491
+Harrow West,London,London North west,London,England,Borough,72464,47922
+Hayes and Harlington,London,London Mid West,London,England,Borough,72357,43994
+Hendon,London,London North west,London,England,Borough,82661,55075
+Holborn and St Pancras,London,London Central North,London,England,Borough,86061,56786
+Hornchurch and Upminster,London,London North East,London,England,Borough,80765,53974
+Hornsey and Wood Green,London,London Middle North,London,England,Borough,81814,61105
+Ilford North,London,London North East,London,England,Borough,72973,50114
+Ilford South,London,London North East,London,England,Borough,84972,53477
+Islington North,London,London Central North,London,England,Borough,75162,53805
+Islington South and Finsbury,London,London Central North,London,England,Borough,70489,47816
+Kensington,London,London Central West,London,England,Borough,64609,43762
+Kingston and Surbiton,London,London Middle South,London,England,Borough,81975,60846
+"Lewisham, Deptford",London,London Central South,London,England,Borough,80631,55368
+Lewisham East,London,London Central South,London,England,Borough,67857,44815
+Lewisham West and Penge,London,London Central South,London,England,Borough,74617,52100
+Leyton and Wanstead,London,London Middle North,London,England,County,64852,44547
+Mitcham and Morden,London,London Middle South,London,England,Borough,70021,45741
+Old Bexley and Sidcup,London,London South East,London,England,Borough,66104,46145
+Orpington,London,London South East,London,England,Borough,68877,48721
+Poplar and Limehouse,London,London Central North,London,England,Borough,91836,61276
+Putney,London,London Central West,London,England,Borough,65556,50467
+Richmond Park,London,London Mid West,London,England,Borough,82699,65067
+Romford,London,London North East,London,England,Borough,72350,47231
+"Ruislip, Northwood and Pinner",London,London North west,London,England,Borough,72816,52904
+Streatham,London,London Central South,London,England,Borough,84783,56513
+Sutton and Cheam,London,London Middle South,London,England,Borough,71779,50487
+Tooting,London,London Middle South,London,England,Borough,76954,58473
+Tottenham,London,London Middle North,London,England,Borough,75740,46856
+Twickenham,London,London Mid West,London,England,Borough,84906,64503
+Uxbridge and South Ruislip,London,London North west,London,England,Borough,70365,48187
+Vauxhall,London,London Central South,London,England,Borough,88659,56333
+Walthamstow,London,London Middle North,London,England,County,70267,48335
+West Ham,London,London Central North,London,England,Borough,97947,60200
+Westminster North,London,London Central West,London,England,Borough,65519,42911
+Wimbledon,London,London Middle South,London,England,Borough,68240,53027
+Berwick-Upon-Tweed,Northumberland,Northumberland,North East,England,County,59939,42109
+Bishop Auckland,Durham,County Durham,North East,England,County,68170,44805
+Blaydon,Tyne and Wear,"Newcastle, Tyne & Wear",North East,England,Borough,67853,45681
+Blyth Valley,Northumberland,Northumberland,North East,England,Borough,64429,40859
+City Of Durham,Durham,County Durham,North East,England,County,71271,48859
+Darlington,Durham,County Durham,North East,England,Borough,66397,43498
+Easington,Durham,County Durham,North East,England,County,61182,34583
+Gateshead,Tyne and Wear,"Newcastle, Tyne & Wear",North East,England,Borough,64449,38145
+Hartlepool,Cleveland,North Yorkshire,North East,England,Borough,70855,41037
+Hexham,Northumberland,Northumberland,North East,England,County,61324,46150
+Houghton and Sunderland South,Tyne and Wear,"South Shields, Jarrow & Sunderland",North East,England,Borough,68835,39811
+Jarrow,Tyne and Wear,"South Shields, Jarrow & Sunderland",North East,England,Borough,65103,40736
+Middlesbrough,Cleveland,North Yorkshire,North East,England,Borough,60764,34097
+Middlesbrough South and East Cleveland,Cleveland,North Yorkshire,North East,England,County,72348,47817
+Newcastle Upon Tyne Central,Tyne and Wear,"Newcastle, Tyne & Wear",North East,England,Borough,57845,37474
+Newcastle Upon Tyne East,Tyne and Wear,"Newcastle, Tyne & Wear",North East,England,Borough,63796,43365
+Newcastle Upon Tyne North,Tyne and Wear,"Newcastle, Tyne & Wear",North East,England,Borough,68486,46999
+North Durham,Durham,County Durham,North East,England,County,66796,42195
+North Tyneside,Tyne and Wear,"Newcastle, Tyne & Wear",North East,England,Borough,78902,50429
+North West Durham,Durham,County Durham,North East,England,County,72166,47663
+Redcar,Cleveland,North Yorkshire,North East,England,Borough,65864,40842
+Sedgefield,Durham,County Durham,North East,England,County,64325,41566
+South Shields,Tyne and Wear,"South Shields, Jarrow & Sunderland",North East,England,Borough,62793,37882
+Stockton North,Cleveland,North Yorkshire,North East,England,Borough,66649,41156
+Stockton South,Cleveland,North Yorkshire,North East,England,Borough,76870,54802
+Sunderland Central,Tyne and Wear,"South Shields, Jarrow & Sunderland",North East,England,Borough,72680,43476
+Tynemouth,Tyne and Wear,"Newcastle, Tyne & Wear",North East,England,Borough,77261,56034
+Wansbeck,Northumberland,Northumberland,North East,England,County,63339,40509
+Washington and Sunderland West,Tyne and Wear,"South Shields, Jarrow & Sunderland",North East,England,Borough,66278,37513
+Altrincham and Sale West,Greater Manchester,Manchester South,North West,England,Borough,73107,54763
+Ashton-Under-Lyne,Greater Manchester,Manchester North,North West,England,Borough,67978,38579
+Barrow and Furness,Cumbria,Cumbria,North West,England,County,70158,46046
+Birkenhead,Merseyside,Merseyside West,North West,England,Borough,63762,42329
+Blackburn,Lancashire,Mid Lancashire,North West,England,Borough,71234,44736
+Blackley and Broughton,Greater Manchester,Manchester North,North West,England,Borough,73372,38618
+Blackpool North and Cleveleys,Lancashire,North Lancashire,North West,England,Borough,63692,38804
+Blackpool South,Lancashire,North Lancashire,North West,England,Borough,57690,32752
+Bolton North East,Greater Manchester,Manchester West,North West,England,Borough,67564,43556
+Bolton South East,Greater Manchester,Manchester West,North West,England,Borough,69163,40604
+Bolton West,Greater Manchester,Manchester West,North West,England,County,73191,49298
+Bootle,Merseyside,Merseyside North,North West,England,Borough,74832,49174
+Burnley,Lancashire,Mid Lancashire,North West,England,Borough,64345,38984
+Bury North,Greater Manchester,Manchester North,North West,England,Borough,68802,46841
+Bury South,Greater Manchester,Manchester North,North West,England,Borough,75152,50274
+Carlisle,Cumbria,Cumbria,North West,England,County,65105,42873
+Cheadle,Greater Manchester,Manchester South,North West,England,Borough,74577,55903
+Chorley,Lancashire,South Lancashire,North West,England,County,77072,39870
+City Of Chester,Cheshire,Cheshire South West,North West,England,County,76057,54560
+Congleton,Cheshire,Cheshire North East,North West,England,County,80930,57233
+Copeland,Cumbria,Cumbria,North West,England,County,61693,42523
+Crewe and Nantwich,Cheshire,Cheshire South West,North West,England,County,80321,54032
+Denton and Reddish,Greater Manchester,Manchester South,North West,England,Borough,66234,38588
+Eddisbury,Cheshire,Cheshire South West,North West,England,County,73700,52971
+Ellesmere Port and Neston,Cheshire,Cheshire South West,North West,England,County,70327,48746
+Fylde,Lancashire,North Lancashire,North West,England,County,66847,46659
+Garston and Halewood,Merseyside,Liverpool & St Helens,North West,England,Borough,76116,53326
+Halton,Cheshire,Cheshire North East,North West,England,County,71930,46203
+Hazel Grove,Greater Manchester,Manchester South,North West,England,County,63346,44269
+Heywood and Middleton,Greater Manchester,Manchester North,North West,England,County,80162,47488
+Hyndburn,Lancashire,Mid Lancashire,North West,England,Borough,70842,42406
+Knowsley,Merseyside,Liverpool & St Helens,North West,England,Borough,84082,54938
+Lancaster and Fleetwood,Lancashire,North Lancashire,North West,England,County,70059,45219
+Leigh,Greater Manchester,Manchester West,North West,England,County,77417,46979
+"Liverpool, Riverside",Merseyside,Merseyside West,North West,England,Borough,80310,52789
+"Liverpool, Walton",Merseyside,Liverpool & St Helens,North West,England,Borough,62628,40786
+"Liverpool, Wavertree",Merseyside,Liverpool & St Helens,North West,England,Borough,63458,43377
+"Liverpool, West Derby",Merseyside,Liverpool & St Helens,North West,England,Borough,65640,43989
+Macclesfield,Cheshire,Cheshire North East,North West,England,County,76216,53867
+Makerfield,Greater Manchester,Manchester West,North West,England,County,74190,44259
+Manchester Central,Greater Manchester,Manchester South,North West,England,Borough,92247,52289
+"Manchester, Gorton",Greater Manchester,Manchester South,North West,England,Borough,76419,44545
+"Manchester, Withington",Greater Manchester,Manchester South,North West,England,Borough,76530,52995
+Morecambe and Lunesdale,Lancashire,North Lancashire,North West,England,County,67397,45310
+Oldham East and Saddleworth,Greater Manchester,Manchester North,North West,England,County,72120,46164
+Oldham West and Royton,Greater Manchester,Manchester North,North West,England,Borough,72999,44434
+Pendle,Lancashire,Mid Lancashire,North West,England,Borough,65292,44460
+Penrith and The Border,Cumbria,Cumbria,North West,England,County,67555,47824
+Preston,Lancashire,South Lancashire,North West,England,Borough,59672,33790
+Ribble Valley,Lancashire,Mid Lancashire,North West,England,County,79247,55284
+Rochdale,Greater Manchester,Manchester North,North West,England,County,78909,47447
+Rossendale and Darwen,Lancashire,South Lancashire,North West,England,Borough,72770,48822
+Salford and Eccles,Greater Manchester,Manchester West,North West,England,Borough,82202,50632
+Sefton Central,Merseyside,Merseyside North,North West,England,County,69760,50880
+Southport,Merseyside,Merseyside North,North West,England,Borough,70837,48180
+South Ribble,Lancashire,South Lancashire,North West,England,County,75351,53784
+Stalybridge and Hyde,Greater Manchester,Manchester North,North West,England,County,73064,42368
+St Helens North,Merseyside,Liverpool & St Helens,North West,England,Borough,75593,47561
+St Helens South and Whiston,Merseyside,Liverpool & St Helens,North West,England,Borough,79061,50313
+Stockport,Greater Manchester,Manchester South,North West,England,Borough,65391,41715
+Stretford and Urmston,Greater Manchester,Manchester West,North West,England,Borough,72372,50067
+Tatton,Cheshire,Cheshire North East,North West,England,County,69018,48967
+Wallasey,Merseyside,Merseyside West,North West,England,Borough,66310,46492
+Warrington North,Cheshire,Cheshire North East,North West,England,Borough,72235,46667
+Warrington South,Cheshire,Cheshire North East,North West,England,Borough,86015,61899
+Weaver Vale,Cheshire,Cheshire South West,North West,England,County,70551,50713
+West Lancashire,Lancashire,South Lancashire,North West,England,County,73347,52663
+Westmorland and Lonsdale,Cumbria,Cumbria,North West,England,County,67789,52712
+Wigan,Greater Manchester,Manchester West,North West,England,County,75680,45042
+Wirral South,Merseyside,Merseyside West,North West,England,County,57280,43547
+Wirral West,Merseyside,Merseyside West,North West,England,County,55550,42918
+Workington,Cumbria,Cumbria,North West,England,County,61370,41599
+Worsley and Eccles South,Greater Manchester,Manchester West,North West,England,County,75219,44707
+Wyre and Preston North,Lancashire,North Lancashire,North West,England,County,74775,52924
+Wythenshawe and Sale East,Greater Manchester,Manchester South,North West,England,Borough,76313,44759
+Belfast East,Northern Ireland,Belfast & East,Northern Ireland,Northern Ireland,Borough,66245,42445
+Belfast North,Northern Ireland,Belfast & East,Northern Ireland,Northern Ireland,Borough,72225,49037
+Belfast South,Northern Ireland,Belfast & East,Northern Ireland,Northern Ireland,Borough,69984,47352
+Belfast West,Northern Ireland,Belfast & East,Northern Ireland,Northern Ireland,Borough,65644,38782
+East Antrim,Northern Ireland,NI North,Northern Ireland,Northern Ireland,County,64830,37261
+East Londonderry,Northern Ireland,NI North,Northern Ireland,Northern Ireland,County,69246,39302
+Fermanagh and South Tyrone,Northern Ireland,NI West,Northern Ireland,Northern Ireland,County,72848,50762
+Foyle,Northern Ireland,NI West,Northern Ireland,Northern Ireland,County,74346,47144
+Lagan Valley,Northern Ireland,Belfast & East,Northern Ireland,Northern Ireland,County,75735,45405
+Mid Ulster,Northern Ireland,NI North,Northern Ireland,Northern Ireland,County,70449,44620
+Newry and Armagh,Northern Ireland,NI South,Northern Ireland,Northern Ireland,County,81226,50779
+North Antrim,Northern Ireland,NI North,Northern Ireland,Northern Ireland,County,77134,44051
+North Down,Northern Ireland,Belfast & East,Northern Ireland,Northern Ireland,County,67099,40643
+South Antrim,Northern Ireland,NI North,Northern Ireland,Northern Ireland,County,71711,42974
+South Down,Northern Ireland,NI South,Northern Ireland,Northern Ireland,County,79175,49762
+Strangford,Northern Ireland,Belfast & East,Northern Ireland,Northern Ireland,County,66928,37485
+Upper Bann,Northern Ireland,NI South,Northern Ireland,Northern Ireland,County,82887,50045
+West Tyrone,Northern Ireland,NI West,Northern Ireland,Northern Ireland,County,66259,41186
+Aberdeen North,Scotland,Aberdeen & North East,Scotland,Scotland,Borough,62489,37413
+Aberdeen South,Scotland,Aberdeen & North East,Scotland,Scotland,Borough,65719,45638
+Airdrie and Shotts,Scotland,Central Scotland,Scotland,Scotland,County,64011,39772
+Angus,Scotland,Dundee & Angus,Scotland,Scotland,County,63952,43170
+Argyll and Bute,Scotland,Scotland West Highland,Scotland,Scotland,County,66525,48050
+"Ayr, Carrick and Cumnock",Scotland,Scotland South West,Scotland,Scotland,County,71970,46592
+Banff and Buchan,Scotland,Aberdeen & North East,Scotland,Scotland,County,66655,42260
+"Berwickshire, Roxburgh and Selkirk",Scotland,South East Scotland,Scotland,Scotland,County,74518,53146
+"Caithness, Sutherland and Easter Ross",Scotland,North Scotland,Scotland,Scotland,County,46930,31457
+Central Ayrshire,Scotland,Scotland Mid West,Scotland,Scotland,County,69742,46534
+"Coatbridge, Chryston and Bellshill",Scotland,Glasgow,Scotland,Scotland,Borough,72943,48221
+"Cumbernauld, Kilsyth and Kirkintilloch East",Scotland,Central Scotland,Scotland,Scotland,County,66079,45686
+Dumfries and Galloway,Scotland,Scotland South West,Scotland,Scotland,County,74580,51429
+"Dumfriesshire, Clydesdale and Tweeddale",Scotland,Scotland South West,Scotland,Scotland,County,68330,49153
+Dundee East,Scotland,Dundee & Angus,Scotland,Scotland,Borough,66210,45277
+Dundee West,Scotland,Dundee & Angus,Scotland,Scotland,Borough,64431,41579
+Dunfermline and West Fife,Scotland,Scotland Mid East,Scotland,Scotland,County,76652,53482
+East Dunbartonshire,Scotland,Glasgow,Scotland,Scotland,County,66075,53031
+"East Kilbride, Strathaven and Lesmahagow",Scotland,Scotland South Central,Scotland,Scotland,County,81224,56337
+East Lothian,Scotland,South East Scotland,Scotland,Scotland,County,81600,58513
+East Renfrewshire,Scotland,Scotland Mid West,Scotland,Scotland,County,72232,55357
+Edinburgh East,Scotland,Edinburgh,Scotland,Scotland,Borough,69424,47815
+Edinburgh North and Leith,Scotland,Edinburgh,Scotland,Scotland,Borough,81336,59344
+Edinburgh South,Scotland,Edinburgh,Scotland,Scotland,Borough,66188,49732
+Edinburgh South West,Scotland,Edinburgh,Scotland,Scotland,Borough,73501,52131
+Edinburgh West,Scotland,Edinburgh,Scotland,Scotland,Borough,72507,54533
+Falkirk,Scotland,Central Scotland,Scotland,Scotland,County,84472,55872
+Glasgow Central,Scotland,Glasgow,Scotland,Scotland,Borough,69230,40105
+Glasgow East,Scotland,Glasgow,Scotland,Scotland,Borough,67381,38483
+Glasgow North,Scotland,Glasgow,Scotland,Scotland,Borough,57130,36191
+Glasgow North East,Scotland,Glasgow,Scotland,Scotland,Borough,61075,33925
+Glasgow North West,Scotland,Glasgow,Scotland,Scotland,Borough,63402,39735
+Glasgow South,Scotland,Glasgow,Scotland,Scotland,Borough,70891,47443
+Glasgow South West,Scotland,Glasgow,Scotland,Scotland,Borough,64575,36847
+Glenrothes,Scotland,Scotland Mid East,Scotland,Scotland,County,65672,41546
+Gordon,Scotland,Aberdeen & North East,Scotland,Scotland,County,79629,55916
+Inverclyde,Scotland,Scotland Mid West,Scotland,Scotland,County,60622,39903
+"Inverness, Nairn, Badenoch and Strathspey",Scotland,North Scotland,Scotland,Scotland,County,78059,54810
+Kilmarnock and Loudoun,Scotland,Scotland Mid West,Scotland,Scotland,County,74517,47631
+Kirkcaldy and Cowdenbeath,Scotland,Scotland Mid East,Scotland,Scotland,County,72853,47005
+Lanark and Hamilton East,Scotland,Scotland South Central,Scotland,Scotland,County,77659,53072
+Linlithgow and East Falkirk,Scotland,Central Scotland,Scotland,Scotland,County,87044,57775
+Livingston,Scotland,Central Scotland,Scotland,Scotland,County,82285,54592
+Midlothian,Scotland,South East Scotland,Scotland,Scotland,County,70544,48221
+Moray,Scotland,Aberdeen & North East,Scotland,Scotland,County,71035,48825
+Motherwell and Wishaw,Scotland,Scotland South Central,Scotland,Scotland,Borough,68856,44420
+Na h-Eileanan An Iar,Scotland,North Scotland,Scotland,Scotland,County,21106,14477
+North Ayrshire and Arran,Scotland,Scotland Mid West,Scotland,Scotland,County,73534,48154
+North East Fife,Scotland,Scotland Mid East,Scotland,Scotland,County,60905,45878
+Ochil and South Perthshire,Scotland,Scotland Mid East,Scotland,Scotland,County,78776,57813
+Orkney and Shetland,Scotland,North Scotland,Scotland,Scotland,County,34211,23160
+Paisley and Renfrewshire North,Scotland,Scotland Mid West,Scotland,Scotland,County,72007,49682
+Paisley and Renfrewshire South,Scotland,Scotland Mid West,Scotland,Scotland,County,64385,43084
+Perth and North Perthshire,Scotland,Dundee & Angus,Scotland,Scotland,County,72600,54076
+"Ross, Skye and Lochaber",Scotland,North Scotland,Scotland,Scotland,County,54230,39869
+Rutherglen and Hamilton West,Scotland,Scotland South Central,Scotland,Scotland,Borough,80918,53794
+Stirling,Scotland,Scotland West Highland,Scotland,Scotland,County,68473,52620
+West Aberdeenshire and Kincardine,Scotland,Dundee & Angus,Scotland,Scotland,County,72640,53345
+West Dunbartonshire,Scotland,Scotland West Highland,Scotland,Scotland,County,66517,45140
+Aldershot,Hampshire,Basingstoke & Aldershot,South East,England,Borough,72617,47932
+Arundel and South Downs,West Sussex,West Sussex,South East,England,County,81726,61408
+Ashford,Kent,Central Kent,South East,England,County,89553,60059
+Aylesbury,Buckinghamshire,Buckinghamshire,South East,England,County,86665,60576
+Banbury,Oxfordshire,Oxfordshire & Newbury,South East,England,County,90116,62921
+Basingstoke,Hampshire,Basingstoke & Aldershot,South East,England,Borough,82928,54713
+Beaconsfield,Buckinghamshire,Buckinghamshire,South East,England,County,77720,57868
+Bexhill and Battle,East Sussex,East Sussex,South East,England,County,81963,59093
+Bognor Regis and Littlehampton,West Sussex,West Sussex,South East,England,County,77446,51223
+Bracknell,Berkshire,Berkshire East,South East,England,County,78978,54350
+"Brighton, Kemptown",East Sussex,East Sussex,South East,England,Borough,69833,48533
+"Brighton, Pavilion",East Sussex,East Sussex,South East,England,Borough,79057,57998
+Buckingham,Buckinghamshire,Buckinghamshire,South East,England,County,83146,63458
+Canterbury,Kent,East Kent,South East,England,County,80203,60113
+Chatham and Aylesford,Kent,West Kent,South East,England,County,71642,43340
+Chesham and Amersham,Buckinghamshire,Buckinghamshire,South East,England,County,72542,55685
+Chichester,West Sussex,West Sussex,South East,England,County,85499,61243
+Crawley,West Sussex,West Sussex,South East,England,Borough,74207,49899
+Dartford,Kent,West Kent,South East,England,County,82209,54023
+Dover,Kent,East Kent,South East,England,County,76355,50701
+Eastbourne,East Sussex,East Sussex,South East,England,Borough,79307,55134
+East Hampshire,Hampshire,Portsmouth,South East,England,County,76478,56895
+Eastleigh,Hampshire,"Winchester, Eastleigh, Romsey & Southampton",South East,England,Borough,83880,58971
+East Surrey,Surrey,East Surrey,South East,England,County,83148,59690
+East Worthing and Shoreham,West Sussex,West Sussex,South East,England,County,75194,53128
+Epsom and Ewell,Surrey,East Surrey,South East,England,Borough,81138,59451
+Esher and Walton,Surrey,East Surrey,South East,England,Borough,81184,63084
+Fareham,Hampshire,New Forest & Isle of Wight,South East,England,County,78337,57250
+Faversham and Mid Kent,Kent,Central Kent,South East,England,County,73403,50394
+Folkestone and Hythe,Kent,East Kent,South East,England,County,88272,59005
+Gillingham and Rainham,Kent,West Kent,South East,England,Borough,73549,45958
+Gosport,Hampshire,New Forest & Isle of Wight,South East,England,Borough,73541,48453
+Gravesham,Kent,West Kent,South East,England,County,73242,47560
+Guildford,Surrey,West Surrey,South East,England,County,77729,58651
+Hastings and Rye,East Sussex,East Sussex,South East,England,County,80524,54274
+Havant,Hampshire,Portsmouth,South East,England,Borough,72103,45959
+Henley,Oxfordshire,Oxfordshire & Newbury,South East,England,County,76646,58759
+Horsham,West Sussex,West Sussex,South East,England,County,86730,63242
+Hove,East Sussex,East Sussex,South East,England,Borough,74313,56391
+Isle Of Wight,Isle of Wight,New Forest & Isle of Wight,South East,England,County,113021,74442
+Lewes,East Sussex,East Sussex,South East,England,County,71503,54851
+Maidenhead,Berkshire,Berkshire East,South East,England,County,76668,56492
+Maidstone and The Weald,Kent,Central Kent,South East,England,County,76109,51680
+Meon Valley,Hampshire,Portsmouth,South East,England,County,75737,54829
+Mid Sussex,West Sussex,West Sussex,South East,England,County,85146,62762
+Milton Keynes North,Buckinghamshire,Buckinghamshire,South East,England,County,91545,62543
+Milton Keynes South,Buckinghamshire,Buckinghamshire,South East,England,Borough,96363,64007
+Mole Valley,Surrey,East Surrey,South East,England,County,74665,57110
+Newbury,Berkshire,Oxfordshire & Newbury,South East,England,County,83414,59998
+New Forest East,Hampshire,New Forest & Isle of Wight,South East,England,County,73549,50786
+New Forest West,Hampshire,New Forest & Isle of Wight,South East,England,County,70869,50306
+North East Hampshire,Hampshire,Basingstoke & Aldershot,South East,England,County,78954,59270
+North Thanet,Kent,East Kent,South East,England,County,72756,48178
+North West Hampshire,Hampshire,Basingstoke & Aldershot,South East,England,County,83083,58918
+Oxford East,Oxfordshire,Oxfordshire & Newbury,South East,England,Borough,78303,49359
+Oxford West and Abingdon,Oxfordshire,Oxfordshire & Newbury,South East,England,County,76951,58824
+Portsmouth North,Hampshire,Portsmouth,South East,England,Borough,71299,45910
+Portsmouth South,Hampshire,Portsmouth,South East,England,Borough,74186,47425
+Reading East,Berkshire,Berkshire East,South East,England,Borough,77152,55918
+Reading West,Berkshire,Berkshire East,South East,England,County,74137,50392
+Reigate,Surrey,East Surrey,South East,England,Borough,74242,53156
+Rochester and Strood,Kent,West Kent,South East,England,County,82056,51926
+Romsey and Southampton North,Hampshire,"Winchester, Eastleigh, Romsey & Southampton",South East,England,County,68228,51390
+Runnymede and Weybridge,Surrey,West Surrey,South East,England,County,77196,53289
+Sevenoaks,Kent,West Kent,South East,England,County,71757,50956
+Sittingbourne and Sheppey,Kent,Central Kent,South East,England,County,83917,51394
+Slough,Berkshire,Berkshire East,South East,England,Borough,86818,51038
+"Southampton, Itchen",Hampshire,"Winchester, Eastleigh, Romsey & Southampton",South East,England,Borough,72299,47421
+"Southampton, Test",Hampshire,"Winchester, Eastleigh, Romsey & Southampton",South East,England,Borough,70116,44994
+South Thanet,Kent,East Kent,South East,England,County,73223,48257
+South West Surrey,Surrey,West Surrey,South East,England,County,79096,60340
+Spelthorne,Surrey,West Surrey,South East,England,Borough,70929,49510
+Surrey Heath,Surrey,West Surrey,South East,England,County,81349,58654
+Tonbridge and Malling,Kent,West Kent,South East,England,County,79278,57003
+Tunbridge Wells,Kent,Central Kent,South East,England,County,74823,54650
+Wantage,Oxfordshire,Oxfordshire & Newbury,South East,England,County,90867,67173
+Wealden,East Sussex,East Sussex,South East,England,County,82998,60907
+Winchester,Hampshire,"Winchester, Eastleigh, Romsey & Southampton",South East,England,County,75582,58890
+Windsor,Berkshire,Berkshire East,South East,England,County,75038,53750
+Witney,Oxfordshire,Oxfordshire & Newbury,South East,England,County,83845,61305
+Woking,Surrey,West Surrey,South East,England,County,75424,53937
+Wokingham,Berkshire,Berkshire East,South East,England,County,83953,61997
+Worthing West,West Sussex,West Sussex,South East,England,Borough,78585,54648
+Wycombe,Buckinghamshire,Buckinghamshire,South East,England,County,78093,54756
+Bath,Avon,North Somerset,South West,England,Borough,67805,52138
+Bournemouth East,Dorset,Dorset,South West,England,Borough,74125,49274
+Bournemouth West,Dorset,Dorset,South West,England,Borough,74205,45977
+Bridgwater and West Somerset,Somerset,South Somerset,South West,England,County,85327,57652
+Bristol East,Avon,Bristol,South West,England,Borough,73867,52154
+Bristol North West,Avon,Bristol,South West,England,Borough,76273,55885
+Bristol South,Avon,Bristol,South West,England,Borough,84079,55196
+Bristol West,Avon,Bristol,South West,England,Borough,99253,75528
+Camborne and Redruth,Cornwall,South Cornwall,South West,England,County,70250,50367
+Central Devon,Devon,North West Devon,South West,England,County,74296,58072
+Cheltenham,Gloucestershire,North Gloucestershire,South West,England,Borough,81044,59357
+Chippenham,Wiltshire,Wiltshire,South West,England,County,77221,57099
+Christchurch,Dorset,Dorset,South West,England,County,71520,51951
+Devizes,Wiltshire,Wiltshire,South West,England,County,73372,50954
+East Devon,Devon,East Devon,South West,England,County,87168,64073
+Exeter,Devon,East Devon,South West,England,Borough,82054,56192
+Filton and Bradley Stoke,Avon,South Gloucestershire,South West,England,County,74016,53752
+Forest Of Dean,Gloucestershire,North Gloucestershire,South West,England,County,71438,51475
+Gloucester,Gloucestershire,North Gloucestershire,South West,England,Borough,81319,53764
+Kingswood,Avon,South Gloucestershire,South West,England,Borough,68972,49314
+Mid Dorset and North Poole,Dorset,Dorset,South West,England,County,65427,48930
+Newton Abbot,Devon,East Devon,South West,England,County,72529,52556
+North Cornwall,Cornwall,North Cornwall,South West,England,County,69935,51678
+North Devon,Devon,North West Devon,South West,England,County,75859,55581
+North Dorset,Dorset,Dorset,South West,England,County,76765,56107
+North East Somerset,Avon,North Somerset,South West,England,County,73692,56308
+North Somerset,Avon,North Somerset,South West,England,County,80194,62055
+North Swindon,Wiltshire,Wiltshire,South West,England,County,82441,55115
+North Wiltshire,Wiltshire,Wiltshire,South West,England,County,73280,54758
+"Plymouth, Moor View",Devon,Plymouth & South Devon,South West,England,Borough,69430,44239
+"Plymouth, Sutton and Devonport",Devon,Plymouth & South Devon,South West,England,Borough,77852,53176
+Poole,Dorset,Dorset,South West,England,Borough,73989,50451
+Salisbury,Wiltshire,Wiltshire,South West,England,County,74556,53730
+Somerton and Frome,Somerset,South Somerset,South West,England,County,85866,64896
+South Dorset,Dorset,Dorset,South West,England,County,73809,51058
+South East Cornwall,Cornwall,North Cornwall,South West,England,County,71825,53655
+South Swindon,Wiltshire,Wiltshire,South West,England,County,73118,50746
+South West Devon,Devon,Plymouth & South Devon,South West,England,County,72535,53367
+South West Wiltshire,Wiltshire,Wiltshire,South West,England,County,77969,54895
+St Austell and Newquay,Cornwall,North Cornwall,South West,England,County,79930,55776
+St Ives,Cornwall,South Cornwall,South West,England,County,68795,51413
+Stroud,Gloucestershire,South Gloucestershire,South West,England,County,84537,65930
+Taunton Deane,Somerset,South Somerset,South West,England,County,88676,63733
+Tewkesbury,Gloucestershire,North Gloucestershire,South West,England,County,83958,61140
+The Cotswolds,Gloucestershire,South Gloucestershire,South West,England,County,81939,61176
+Thornbury and Yate,Avon,South Gloucestershire,South West,England,County,69492,52243
+Tiverton and Honiton,Devon,East Devon,South West,England,County,82953,59613
+Torbay,Devon,Plymouth & South Devon,South West,England,Borough,75054,50426
+Torridge and West Devon,Devon,North West Devon,South West,England,County,80403,59730
+Totnes,Devon,Plymouth & South Devon,South West,England,County,69863,52182
+Truro and Falmouth,Cornwall,South Cornwall,South West,England,County,76719,59190
+Wells,Somerset,North Somerset,South West,England,County,81898,61628
+West Dorset,Dorset,Dorset,South West,England,County,81897,60925
+Weston-Super-Mare,Avon,North Somerset,South West,England,County,82526,55614
+Yeovil,Somerset,South Somerset,South West,England,County,82468,59260
+Aberavon,West Glamorgan,West South Wales,Wales,Wales,County,50750,31598
+Aberconwy,Clwyd,North West Wales,Wales,Wales,County,44699,31865
+Alyn and Deeside,Clwyd,North East Wales,Wales,Wales,County,62789,43008
+Arfon,Gwynedd,North West Wales,Wales,Wales,County,42215,29074
+Blaenau Gwent,Gwent and Mid Glamorgan,Newport & Monmouth,Wales,Wales,County,50739,30219
+Brecon and Radnorshire,Powys,Mid Wales,Wales,Wales,County,55490,41319
+Bridgend,Gwent and Mid Glamorgan,West South Wales,Wales,Wales,County,63303,42236
+Caerphilly,Gwent and Mid Glamorgan,Mid South Wales,Wales,Wales,County,63166,40117
+Cardiff Central,South Glamorgan,Cardiff & Glamorgan,Wales,Wales,Borough,64037,41822
+Cardiff North,South Glamorgan,Cardiff & Glamorgan,Wales,Wales,Borough,68438,52666
+Cardiff South and Penarth,South Glamorgan,Cardiff & Glamorgan,Wales,Wales,Borough,78837,50579
+Cardiff West,South Glamorgan,Cardiff & Glamorgan,Wales,Wales,Borough,68508,46177
+Carmarthen East and Dinefwr,Dyfed,Carmarthen & Pembrokeshire,Wales,Wales,County,57419,41002
+Carmarthen West and South Pembrokeshire,Dyfed,Carmarthen & Pembrokeshire,Wales,Wales,County,59158,42114
+Ceredigion,Dyfed,Mid Wales,Wales,Wales,County,56386,40105
+Clwyd South,Clwyd,North East Wales,Wales,Wales,County,53919,36306
+Clwyd West,Clwyd,North East Wales,Wales,Wales,County,57714,40203
+Cynon Valley,Gwent and Mid Glamorgan,Mid South Wales,Wales,Wales,County,51134,30236
+Delyn,Clwyd,North East Wales,Wales,Wales,County,54560,38370
+Dwyfor Meirionnydd,Gwynedd,North West Wales,Wales,Wales,County,44362,29928
+Gower,West Glamorgan,"Swansea, Gower & Llanelli",Wales,Wales,County,61762,44482
+Islwyn,Gwent and Mid Glamorgan,Mid South Wales,Wales,Wales,County,55423,34350
+Llanelli,Dyfed,"Swansea, Gower & Llanelli",Wales,Wales,County,60518,38233
+Merthyr Tydfil and Rhymney,Gwent and Mid Glamorgan,Mid South Wales,Wales,Wales,County,56322,32246
+Monmouth,Gwent and Mid Glamorgan,Newport & Monmouth,Wales,Wales,County,67098,50217
+Montgomeryshire,Powys,Mid Wales,Wales,Wales,County,48997,34214
+Neath,West Glamorgan,West South Wales,Wales,Wales,County,56419,36756
+Newport East,Gwent and Mid Glamorgan,Newport & Monmouth,Wales,Wales,County,58554,36282
+Newport West,Gwent and Mid Glamorgan,Newport & Monmouth,Wales,Wales,County,66657,43433
+Ogmore,Gwent and Mid Glamorgan,West South Wales,Wales,Wales,County,57581,35390
+Pontypridd,Gwent and Mid Glamorgan,Mid South Wales,Wales,Wales,County,60327,39060
+Preseli Pembrokeshire,Dyfed,Carmarthen & Pembrokeshire,Wales,Wales,County,59606,42419
+Rhondda,Gwent and Mid Glamorgan,West South Wales,Wales,Wales,County,50262,29642
+Swansea East,West Glamorgan,"Swansea, Gower & Llanelli",Wales,Wales,Borough,58450,33579
+Swansea West,West Glamorgan,"Swansea, Gower & Llanelli",Wales,Wales,Borough,57078,35830
+Torfaen,Gwent and Mid Glamorgan,Newport & Monmouth,Wales,Wales,County,62330,37176
+Vale Of Clwyd,Clwyd,North East Wales,Wales,Wales,County,56649,37213
+Vale Of Glamorgan,South Glamorgan,Cardiff & Glamorgan,Wales,Wales,County,76508,54807
+Wrexham,Clwyd,North East Wales,Wales,Wales,County,49737,33532
+Ynys Mon,Gwynedd,South Somerset,Wales,Wales,County,51925,36552
+Aldridge-Brownhills,West Midlands,Wolverhampton & Walsall,West Midlands,England,Borough,60138,39342
+"Birmingham, Edgbaston",West Midlands,Birmingham,West Midlands,England,Borough,68828,42328
+"Birmingham, Erdington",West Midlands,Birmingham,West Midlands,England,Borough,66148,35229
+"Birmingham, Hall Green",West Midlands,Birmingham,West Midlands,England,Borough,80283,52911
+"Birmingham, Hodge Hill",West Midlands,Birmingham,West Midlands,England,Borough,78295,45003
+"Birmingham, Ladywood",West Midlands,Birmingham,West Midlands,England,Borough,74912,42118
+"Birmingham, Northfield",West Midlands,Birmingham,West Midlands,England,Borough,73694,43098
+"Birmingham, Perry Barr",West Midlands,Birmingham,West Midlands,England,Borough,72006,42147
+"Birmingham, Selly Oak",West Midlands,Birmingham,West Midlands,England,Borough,82665,49467
+"Birmingham, Yardley",West Midlands,Birmingham,West Midlands,England,Borough,74704,42678
+Bromsgrove,Hereford and Worcester,Worcestershire East,West Midlands,England,County,75078,54272
+Burton,Staffordshire,Stafforshire North,West Midlands,England,County,75036,48738
+Cannock Chase,Staffordshire,Staffordshire South,West Midlands,England,County,74813,46313
+Coventry North East,West Midlands,"Conventry, Meriden & Solihull",West Midlands,England,Borough,76006,44444
+Coventry North West,West Midlands,"Conventry, Meriden & Solihull",West Midlands,England,Borough,75247,47744
+Coventry South,West Midlands,"Conventry, Meriden & Solihull",West Midlands,England,Borough,70979,45044
+Dudley North,West Midlands,Dudley & West Bromwich,West Midlands,England,Borough,61936,36684
+Dudley South,West Midlands,Dudley & West Bromwich,West Midlands,England,Borough,60731,36576
+Halesowen and Rowley Regis,West Midlands,Dudley & West Bromwich,West Midlands,England,Borough,68300,42345
+Hereford and South Herefordshire,Hereford and Worcester,Herefordshire & Worcestershire West,West Midlands,England,County,72085,49646
+Kenilworth and Southam,Warwickshire,Warwickshire,West Midlands,England,County,68154,52597
+Lichfield,Staffordshire,Staffordshire South,West Midlands,England,County,76616,53993
+Ludlow,Shropshire,Shropshire,West Midlands,England,County,69444,50225
+Meriden,West Midlands,"Conventry, Meriden & Solihull",West Midlands,England,County,85368,54161
+Mid Worcestershire,Hereford and Worcester,Worcestershire East,West Midlands,England,County,78220,56123
+Newcastle-Under-Lyme,Staffordshire,Stafforshire North,West Midlands,England,Borough,68211,44739
+North Herefordshire,Hereford and Worcester,Herefordshire & Worcestershire West,West Midlands,England,County,70252,51033
+North Shropshire,Shropshire,Shropshire,West Midlands,England,County,83258,56513
+North Warwickshire,Warwickshire,Warwickshire,West Midlands,England,County,70271,45914
+Nuneaton,Warwickshire,Warwickshire,West Midlands,England,County,70226,45190
+Redditch,Hereford and Worcester,Worcestershire East,West Midlands,England,County,65391,44067
+Rugby,Warwickshire,Warwickshire,West Midlands,England,County,72292,50814
+Shrewsbury and Atcham,Shropshire,Shropshire,West Midlands,England,County,82238,59065
+Solihull,West Midlands,"Conventry, Meriden & Solihull",West Midlands,England,Borough,78760,55344
+South Staffordshire,Staffordshire,Staffordshire South,West Midlands,England,County,73668,50005
+Stafford,Staffordshire,Staffordshire South,West Midlands,England,County,72572,51149
+Staffordshire Moorlands,Staffordshire,Stafforshire North,West Midlands,England,County,65485,43656
+Stoke-On-Trent Central,Staffordshire,Stafforshire North,West Midlands,England,Borough,55419,32070
+Stoke-On-Trent North,Staffordshire,Stafforshire North,West Midlands,England,Borough,68298,40134
+Stoke-On-Trent South,Staffordshire,Stafforshire North,West Midlands,England,Borough,64491,39604
+Stone,Staffordshire,Stafforshire North,West Midlands,England,County,69378,49843
+Stourbridge,West Midlands,Dudley & West Bromwich,West Midlands,England,Borough,69891,45689
+Stratford-On-Avon,Warwickshire,Warwickshire,West Midlands,England,County,74037,55048
+Sutton Coldfield,West Midlands,Wolverhampton & Walsall,West Midlands,England,Borough,75638,52325
+Tamworth,Staffordshire,Staffordshire South,West Midlands,England,County,71572,46056
+Telford,Shropshire,Shropshire,West Midlands,England,Borough,68921,42825
+The Wrekin,Shropshire,Shropshire,West Midlands,England,County,70693,48890
+Walsall North,West Midlands,Wolverhampton & Walsall,West Midlands,England,Borough,67177,36556
+Walsall South,West Midlands,Wolverhampton & Walsall,West Midlands,England,Borough,68024,42472
+Warley,West Midlands,Dudley & West Bromwich,West Midlands,England,Borough,62357,37239
+Warwick and Leamington,Warwickshire,Warwickshire,West Midlands,England,Borough,76362,54205
+West Bromwich East,West Midlands,Dudley & West Bromwich,West Midlands,England,Borough,62046,35975
+West Bromwich West,West Midlands,Dudley & West Bromwich,West Midlands,England,Borough,64517,34459
+West Worcestershire,Hereford and Worcester,Herefordshire & Worcestershire West,West Midlands,England,County,76241,57530
+Wolverhampton North East,West Midlands,Wolverhampton & Walsall,West Midlands,England,Borough,61660,34281
+Wolverhampton South East,West Midlands,Wolverhampton & Walsall,West Midlands,England,Borough,62883,33443
+Wolverhampton South West,West Midlands,Wolverhampton & Walsall,West Midlands,England,Borough,60534,41136
+Worcester,Hereford and Worcester,Worcestershire East,West Midlands,England,Borough,73485,50898
+Wyre Forest,Hereford and Worcester,Worcestershire East,West Midlands,England,County,78077,50561
+Barnsley Central,South Yorkshire,Doncaster & Barnsley,Yorkshire and The Humber,England,Borough,65277,36903
+Barnsley East,South Yorkshire,Doncaster & Barnsley,Yorkshire and The Humber,England,County,69504,38070
+Batley and Spen,West Yorkshire,Huddersfield & South,Yorkshire and The Humber,England,Borough,79558,52927
+Beverley and Holderness,Humberside,Kingston Upon Hull,Yorkshire and The Humber,England,County,79696,53542
+Bradford East,West Yorkshire,Bradford & North,Yorkshire and The Humber,England,Borough,73206,44184
+Bradford South,West Yorkshire,Bradford & North,Yorkshire and The Humber,England,Borough,69046,39741
+Bradford West,West Yorkshire,Bradford & North,Yorkshire and The Humber,England,Borough,70694,44261
+Brigg and Goole,Humberside,Scunthorpe & Grimsby,Yorkshire and The Humber,England,County,65939,43402
+Calder Valley,West Yorkshire,Huddersfield & South,Yorkshire and The Humber,England,County,79287,57793
+Cleethorpes,Humberside,Scunthorpe & Grimsby,Yorkshire and The Humber,England,County,73689,46339
+Colne Valley,West Yorkshire,Huddersfield & South,Yorkshire and The Humber,England,County,84174,60892
+Dewsbury,West Yorkshire,Huddersfield & South,Yorkshire and The Humber,England,County,81253,56389
+Doncaster Central,South Yorkshire,Doncaster & Barnsley,Yorkshire and The Humber,England,Borough,71389,41581
+Doncaster North,South Yorkshire,Doncaster & Barnsley,Yorkshire and The Humber,England,County,72362,40698
+Don Valley,South Yorkshire,Doncaster & Barnsley,Yorkshire and The Humber,England,County,75356,45437
+East Yorkshire,Humberside,Kingston Upon Hull,Yorkshire and The Humber,England,County,80923,52769
+Elmet and Rothwell,West Yorkshire,Leeds & East,Yorkshire and The Humber,England,County,80957,58225
+Great Grimsby,Humberside,Scunthorpe & Grimsby,Yorkshire and The Humber,England,Borough,61409,33087
+Halifax,West Yorkshire,Bradford & North,Yorkshire and The Humber,England,Borough,71887,46458
+Haltemprice and Howden,Humberside,Scunthorpe & Grimsby,Yorkshire and The Humber,England,County,71083,49779
+Harrogate and Knaresborough,North Yorkshire,North Yorkshire West,Yorkshire and The Humber,England,County,77941,56937
+Hemsworth,West Yorkshire,Leeds & East,Yorkshire and The Humber,England,County,73726,43907
+Huddersfield,West Yorkshire,Huddersfield & South,Yorkshire and The Humber,England,Borough,65525,41882
+Keighley,West Yorkshire,Bradford & North,Yorkshire and The Humber,England,County,72778,52600
+Kingston upon Hull East,Humberside,Kingston Upon Hull,Yorkshire and The Humber,England,Borough,65745,32442
+Kingston upon Hull North,Humberside,Kingston Upon Hull,Yorkshire and The Humber,England,Borough,65515,34203
+Kingston upon Hull West and Hessle,Humberside,Kingston Upon Hull,Yorkshire and The Humber,England,Borough,60192,31356
+Leeds Central,West Yorkshire,Leeds & East,Yorkshire and The Humber,England,Borough,90971,49284
+Leeds East,West Yorkshire,Leeds & East,Yorkshire and The Humber,England,Borough,67286,39052
+Leeds North East,West Yorkshire,Leeds & East,Yorkshire and The Humber,England,Borough,70580,50500
+Leeds North West,West Yorkshire,Leeds & East,Yorkshire and The Humber,England,Borough,67741,49283
+Leeds West,West Yorkshire,Leeds & East,Yorkshire and The Humber,England,Borough,67727,40281
+Morley and Outwood,West Yorkshire,Leeds & East,Yorkshire and The Humber,England,County,78803,51930
+"Normanton, Pontefract and Castleford",West Yorkshire,Leeds & East,Yorkshire and The Humber,England,County,84527,48259
+Penistone and Stocksbridge,South Yorkshire,Sheffield,Yorkshire and The Humber,England,County,70925,49520
+Pudsey,West Yorkshire,Bradford & North,Yorkshire and The Humber,England,Borough,73212,54215
+Richmond (Yorks),North Yorkshire,North Yorkshire West,Yorkshire and The Humber,England,County,82569,57703
+Rotherham,South Yorkshire,Doncaster & Barnsley,Yorkshire and The Humber,England,Borough,61688,35651
+Rother Valley,South Yorkshire,Sheffield,Yorkshire and The Humber,England,County,74804,48698
+Scarborough and Whitby,North Yorkshire,North Yorkshire East,Yorkshire and The Humber,England,County,74404,49724
+Scunthorpe,Humberside,Scunthorpe & Grimsby,Yorkshire and The Humber,England,County,61955,37750
+Selby and Ainsty,North Yorkshire,North Yorkshire East,Yorkshire and The Humber,England,County,78398,56418
+"Sheffield, Brightside and Hillsborough",South Yorkshire,Sheffield,Yorkshire and The Humber,England,Borough,69333,39600
+Sheffield Central,South Yorkshire,Sheffield,Yorkshire and The Humber,England,Borough,89849,50913
+"Sheffield, Hallam",South Yorkshire,Sheffield,Yorkshire and The Humber,England,County,72763,56885
+"Sheffield, Heeley",South Yorkshire,Sheffield,Yorkshire and The Humber,England,Borough,66940,42695
+Sheffield South East,South Yorkshire,Sheffield,Yorkshire and The Humber,England,Borough,67832,41998
+Shipley,West Yorkshire,Bradford & North,Yorkshire and The Humber,England,County,74029,54004
+Skipton and Ripon,North Yorkshire,North Yorkshire West,Yorkshire and The Humber,England,County,78347,58724
+Thirsk and Malton,North Yorkshire,North Yorkshire East,Yorkshire and The Humber,England,County,80991,56588
+Wakefield,West Yorkshire,Huddersfield & South,Yorkshire and The Humber,England,County,70192,45027
+Wentworth and Dearne,South Yorkshire,Doncaster & Barnsley,Yorkshire and The Humber,England,County,74536,41557
+York Central,North Yorkshire,North Yorkshire East,Yorkshire and The Humber,England,Borough,74899,49505
+York Outer,North Yorkshire,North Yorkshire East,Yorkshire and The Humber,England,County,74673,55347
