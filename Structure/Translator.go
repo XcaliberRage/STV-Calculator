@@ -15,12 +15,11 @@ type CSVData struct {
 }
 
 type Row struct {
-	Cols []Col
+	Cols map[string]Col
 }
 
 type Col struct {
-	Header string
-	Data   string
+	Data string
 }
 
 type Reference struct {
@@ -71,56 +70,47 @@ func (a *CSVData) MakeHeaders(line []string) []string {
 // Formats a row of a CSVData struct
 func (a *CSVData) MakeRow(line []string) Row {
 
-	row := Row{}
+	row_col := make(map[string]Col)
 
 	for i, col := range line {
-		data := Col{a.Headers[i], col}
-		row.Cols = append(row.Cols, data)
+		row_col[a.Headers[i]] = Col{col}
 	}
+	row := Row{row_col}
 	return row
 }
 
+// Takes a string and searches the CSVData for every unique instance of that string returning a string array of each found
+// Reference contains optional parameters to filter by a specific common field under a different header
+// E.g. findUnique("region", Reference{"country","england"}) will return a list of each unique entry found under the column "region" found but only counting rows that have "england" under the "column" country
 func (a *CSVData) findUnique(key string, ref Reference) []string {
 	var results []string
 	var has_ref = false
-	var header_index int
-
-	if ref.Value != "" {
+	if ref.Header != "" {
 		has_ref = true
-		for i, v := range a.Headers {
-			if v == ref.Header {
-				header_index = i
-			}
-		}
 	}
 
 	for _, row := range a.Rows {
 
+		// Ignore rows that don't have the specific data under the specific column
 		if has_ref {
-			if row.Cols[header_index].Data != ref.Value {
+			if row.Cols[ref.Header].Data != ref.Value {
 				continue
 			}
 		}
 
-		for _, col := range row.Cols {
-
-			if col.Header != key {
-				continue
+		// Check it's not a duplicate
+		duplicate := false
+		for _, v := range results {
+			if row.Cols[key].Data == v {
+				duplicate = true
+				break
 			}
-			dupe := false
-
-			for _, v := range results {
-				if col.Data == v {
-					dupe = true
-					break
-				}
-			}
-
-			if dupe {
-				continue
-			}
-			results = append(results, col.Data)
 		}
+
+		if !duplicate {
+			results = append(results, row.Cols[key].Data)
+		}
+
 	}
 	return results
 }

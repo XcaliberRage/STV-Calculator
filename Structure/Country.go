@@ -12,24 +12,29 @@ type Country struct {
 	SeatsNum   int
 }
 
-func (a *Country) MakeCountry(name string, sc_info CSVData, mp_info CSVData) {
+func (a *Country) MakeCountry(name string, sc_info *CSVData, mp_info *CSVData) {
 
 	a.Name = name
 	fmt.Println("----")
-	fmt.Println("Making " + a.Name + ":")
+	fmt.Println("Making Country " + a.Name + ":")
 
 	region_names := sc_info.findUnique("region", Reference{"country", a.Name})
+	fmt.Println(region_names)
+	var regions []Region
 
 	for _, region_name := range region_names {
 		r := Region{}
 		r.MakeRegion(region_name, sc_info, mp_info)
+		regions = append(regions, r)
 	}
+	a.Regions = regions
 
 	a.SumElectorate()
 	a.SumVotes()
+	a.SumSeats()
 
-	a.SeatsNum = len(region_names)
-	fmt.Println("Seats: ", a.SeatsNum)
+	fmt.Println("Regions: ", len(region_names))
+	fmt.Printf("Total Seats: %d\n", a.SeatsNum)
 
 }
 
@@ -49,4 +54,10 @@ func (a *Country) SumVotes() {
 		a.ValidVotes += region.ValidVotes
 	}
 
+}
+
+func (a *Country) SumSeats() {
+	for _, region := range a.Regions {
+		a.SeatsNum += region.SeatsNum
+	}
 }

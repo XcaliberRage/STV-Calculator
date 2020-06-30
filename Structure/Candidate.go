@@ -3,9 +3,10 @@
 package Structure
 
 type Candidate struct {
-	Fname  string
-	Sname  string
-	Gender string
-	WasMP  bool
-	votes  int
+	Fname   string
+	Sname   string
+	Gender  string
+	WasMP   bool
+	votes   int
+	StoodIn string
 }
