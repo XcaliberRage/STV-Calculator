@@ -71,8 +71,10 @@ func (a *CSVData) MakeHeaders(line []string) []string {
 func (a *CSVData) MakeRow(line []string) Row {
 
 	row_col := make(map[string]Col)
+	fmt.Println(a.Headers)
 
 	for i, col := range line {
+
 		row_col[a.Headers[i]] = Col{col}
 	}
 	row := Row{row_col}

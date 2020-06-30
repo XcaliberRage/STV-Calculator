@@ -7,7 +7,7 @@ import "fmt"
 type Party struct {
 	Name    string
 	Brev    string
-	members []Candidate
+	Members []Candidate
 	Votes   int
 }
 
@@ -15,24 +15,27 @@ func (a *Party) MakeParty(name string, mp_info *CSVData) {
 
 	a.Name = name
 
-	// Get the abbreviation of the party_name
+	// Iterate over each row
 	for _, row := range mp_info.Rows {
 
+		// If the row does not concern this party, skip it
 		if row.Cols["party_name"].Data != a.Name {
 			continue
 		}
 
-		a.Brev = row.Cols["party_abbreviation"].Data
-		fmt.Println(a.Name + "[" + a.Brev + "]")
-		break
+		// Mark Brev if it's not set
+		if a.Brev == "" {
+			a.Brev = row.Cols["party_abbreviation"].Data
+		}
+
+		mp := Candidate{}
+		mp.MakeNewCandidate(&row, mp_info)
+		a.Members = append(a.Members, mp)
 	}
 
-	// Populate the MPs
-	for _, row := range mp_info.Rows {
-
-		if row.Cols["party_name"].Data != a.Name {
-			continue
-		}
+	fmt.Println(a.Name + "[" + a.Brev + "]" + ":")
+	for _, v := range a.Members {
+		fmt.Println("	" + v.Sname + ", " + v.Fname + ": " + v.StoodIn)
 	}
 
 }
