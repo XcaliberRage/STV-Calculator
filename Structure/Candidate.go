@@ -14,9 +14,10 @@ type Candidate struct {
 	WasMP   bool
 	Votes   int
 	StoodIn string
+	Party   *Party
 }
 
-func (a *Candidate) MakeNewCandidate(row *Row, mp_info *CSVData) {
+func (a *Candidate) MakeNewCandidate(row *Row, party *Party) {
 
 	a.Fname = row.Cols["firstname"].Data
 	a.Sname = row.Cols["surname"].Data
@@ -31,5 +32,6 @@ func (a *Candidate) MakeNewCandidate(row *Row, mp_info *CSVData) {
 	}
 	a.Votes = votes
 	a.StoodIn = row.Cols["constituency_name"].Data
+	a.Party = party
 
 }

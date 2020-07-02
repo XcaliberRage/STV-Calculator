@@ -2,8 +2,6 @@
 //Region.go implements the type def and related functions for Regions
 package Structure
 
-import "fmt"
-
 type Region struct {
 	Name       string
 	Supers     []SuperConstituency
@@ -13,18 +11,16 @@ type Region struct {
 }
 
 // Assigns values to each region based on CSV data
-func (a *Region) MakeRegion(name string, sc_info *CSVData, mp_info *CSVData) {
+func (a *Region) MakeRegion(name string) {
 
 	a.Name = name
-	fmt.Println("	----")
-	fmt.Println("	Making Region " + a.Name + ":")
 
-	sc_names := sc_info.findUnique("super_con", Reference{"region", a.Name})
+	sc_names := Sc_info.findUnique("super_con", Reference{"region", a.Name})
 	var supers []SuperConstituency
 
 	for _, sc_name := range sc_names {
 		sc := SuperConstituency{}
-		sc.MakeSuperConstituency(sc_name, sc_info, mp_info)
+		sc.MakeSuperConstituency(sc_name)
 		supers = append(supers, sc)
 	}
 	a.Supers = supers
@@ -32,9 +28,6 @@ func (a *Region) MakeRegion(name string, sc_info *CSVData, mp_info *CSVData) {
 	a.SumElectorate()
 	a.SumVotes()
 	a.SumSeats()
-
-	fmt.Println("	SCs: ", len(sc_names))
-	fmt.Printf("	Region seats: %d\n", a.SeatsNum)
 
 }
 

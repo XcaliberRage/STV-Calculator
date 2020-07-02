@@ -8,6 +8,9 @@ import (
 	"os"
 )
 
+var Sc_info CSVData
+var Mp_info CSVData
+
 type CSVData struct {
 	Headers []string
 	Rows    []Row
@@ -71,7 +74,6 @@ func (a *CSVData) MakeHeaders(line []string) []string {
 func (a *CSVData) MakeRow(line []string) Row {
 
 	row_col := make(map[string]Col)
-	fmt.Println(a.Headers)
 
 	for i, col := range line {
 

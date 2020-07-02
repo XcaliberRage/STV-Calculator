@@ -3,41 +3,57 @@ package Structure
 
 import "fmt"
 
+var Gb Nation
+
 type Nation struct {
 	Countries []Country
 	Parties   []Party
 }
 
 // Takes both csv data structures and relates that into the overall data structure
-func (a *Nation) NewNation(sc_info CSVData, mp_info CSVData) {
+func (a *Nation) NewNation() {
 
 	// Populate the geography
 	fmt.Println("Searching Countries")
-	country_names := sc_info.findUnique("country", Reference{"", ""})
-	fmt.Println(country_names)
-	var countries []Country
+	country_names := Sc_info.findUnique("country", Reference{"", ""})
+	countries := make([]Country, len(country_names))
 
-	for _, country_name := range country_names {
+	for index, country_name := range country_names {
 
-		c := Country{}
-		c.MakeCountry(country_name, &sc_info, &mp_info)
-		countries = append(countries, c)
+		countries[index] = Country{}
+		countries[index].MakeCountry(country_name)
+
 	}
 
 	a.Countries = countries
 
-	fmt.Printf("\n\n")
+	fmt.Println("Countries populated")
 
 	// Populate the Politics
 	fmt.Println("Searching Parties")
-	party_names := mp_info.findUnique("party_name", Reference{"", ""})
+	party_names := Mp_info.findUnique("party_name", Reference{"", ""})
 
-	var parties []Party
+	parties := make([]Party, len(party_names))
 
-	for _, party_name := range party_names {
+	for index, party_name := range party_names {
 		p := Party{}
-		p.MakeParty(party_name, &mp_info)
-		parties = append(parties, p)
+		p.MakeParty(party_name)
+		parties[index] = p
 	}
 	a.Parties = parties
+	fmt.Println("Parties populated")
+
+	// With the Candidates and Geography prepared, the Candidates need to be attirbuted to a Super Constituency
+
+	// For each SC
+	for _, country := range a.Countries {
+		for _, region := range country.Regions {
+			for _, sc := range region.Supers {
+				sc.FindCandidates()
+				sc.FindWinners()
+			}
+		}
+	}
+
+	fmt.Println("Candidates assigned")
 }

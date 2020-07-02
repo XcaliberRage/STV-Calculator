@@ -2,32 +2,29 @@
 //SuperConstituency.go implements the type def and related functions for Super Constituencies
 package Structure
 
-import "fmt"
-
+// Candidates points towards a candidate that exists in a Party
 type SuperConstituency struct {
 	Name       string
 	Minors     []MinorConstituency
 	Electorate int
 	ValidVotes int
 	Turnout    float64
-	Candidates []Candidate
+	Candidates []*Candidate
 	SeatsNum   int
 	Seats      []Seat
 }
 
 // Assigns values to each Super Constituency based on CSV data
-func (a *SuperConstituency) MakeSuperConstituency(name string, sc_info *CSVData, mp_info *CSVData) {
+func (a *SuperConstituency) MakeSuperConstituency(name string) {
 
 	a.Name = name
-	fmt.Println("		----")
-	fmt.Println("		Making Super " + a.Name + ":")
 
-	minor_names := sc_info.findUnique("original_con", Reference{"super_con", a.Name})
+	minor_names := Sc_info.findUnique("original_con", Reference{"super_con", a.Name})
 	var minors []MinorConstituency
 
 	for _, minor_name := range minor_names {
 		m := MinorConstituency{}
-		m.MakeMinorConstituency(minor_name, sc_info, mp_info)
+		m.MakeMinorConstituency(minor_name)
 		minors = append(minors, m)
 	}
 	a.Minors = minors
@@ -37,10 +34,6 @@ func (a *SuperConstituency) MakeSuperConstituency(name string, sc_info *CSVData,
 	a.Turnout = (float64(a.ValidVotes) / float64(a.Electorate)) * 100
 
 	a.SeatsNum = len(minor_names)
-	fmt.Printf("		SC Seats: %d\n", a.SeatsNum)
-	fmt.Printf("		SC Electorate: %d\n", a.Electorate)
-	fmt.Printf("		SC Valid Votes: %d\n", a.ValidVotes)
-	fmt.Printf("		SC Turnout: %.2f%%\n", a.Turnout)
 }
 
 // Sum Electorate across all super constituencies
@@ -59,4 +52,46 @@ func (a *SuperConstituency) SumVotes() {
 		a.ValidVotes += minor.ValidVotes
 	}
 
+}
+
+// Finds every Candidate that stood in a minor Constituency that resides in this SC and returns an array of them
+func (a *SuperConstituency) FindCandidates() {
+
+	num_parties := len(Gb.Parties)
+
+	for _, minor := range a.Minors {
+		for i := 0; i < num_parties; i++ {
+			party_size := len(Gb.Parties[i].Members)
+			for l := 0; l < party_size; l++ {
+				if Gb.Parties[i].Members[l].StoodIn == minor.Name {
+					a.Candidates = append(a.Candidates, &Gb.Parties[i].Members[l])
+				}
+			}
+		}
+	}
+
+}
+
+// Finds which standing candidate actually won the seat in each minor constituency
+func (a *SuperConstituency) FindWinners() {
+
+	num_candidates := len(a.Candidates)
+
+	for _, minor := range a.Minors {
+		var candidates []*Candidate = nil
+		for i := 0; i < num_candidates; i++ {
+			if a.Candidates[i].StoodIn == minor.Name {
+				candidates = append(candidates, a.Candidates[i])
+			}
+		}
+
+		high := candidates[0]
+		for _, running := range candidates {
+			if running.Votes > high.Votes {
+				high = running
+			}
+		}
+
+		minor.RealSeatHolder = high
+	}
 }
