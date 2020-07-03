@@ -4,14 +4,16 @@ package Structure
 
 // Candidates points towards a candidate that exists in a Party
 type SuperConstituency struct {
-	Name       string
-	Minors     []MinorConstituency
-	Electorate int
-	ValidVotes int
-	Turnout    float64
-	Candidates []*Candidate
-	SeatsNum   int
-	Seats      []Seat
+	Name               string
+	Minors             []MinorConstituency
+	Electorate         int
+	ValidVotes         int
+	Turnout            float64
+	SeatsNum           int
+	Seats              []Seat
+	OriginalDroopQuota float64
+	Voters             []Voter
+	Candidates         map[int]*Candidate
 }
 
 // Assigns values to each Super Constituency based on CSV data
@@ -34,6 +36,7 @@ func (a *SuperConstituency) MakeSuperConstituency(name string) {
 	a.Turnout = (float64(a.ValidVotes) / float64(a.Electorate)) * 100
 
 	a.SeatsNum = len(minor_names)
+	a.OriginalDroopQuota = (float64(a.ValidVotes) / float64(a.SeatsNum+1)) + 1.0
 }
 
 // Sum Electorate across all super constituencies
@@ -58,30 +61,31 @@ func (a *SuperConstituency) SumVotes() {
 func (a *SuperConstituency) FindCandidates() {
 
 	num_parties := len(Gb.Parties)
+	candidates := make(map[int]*Candidate)
 
 	for _, minor := range a.Minors {
 		for i := 0; i < num_parties; i++ {
 			party_size := len(Gb.Parties[i].Members)
 			for l := 0; l < party_size; l++ {
 				if Gb.Parties[i].Members[l].StoodIn == minor.Name {
-					a.Candidates = append(a.Candidates, &Gb.Parties[i].Members[l])
+					candidates[Gb.Parties[i].Members[l].ID] = &Gb.Parties[i].Members[l]
 				}
 			}
 		}
 	}
+
+	a.Candidates = candidates
 
 }
 
 // Finds which standing candidate actually won the seat in each minor constituency
 func (a *SuperConstituency) FindWinners() {
 
-	num_candidates := len(a.Candidates)
-
 	for _, minor := range a.Minors {
 		var candidates []*Candidate = nil
-		for i := 0; i < num_candidates; i++ {
-			if a.Candidates[i].StoodIn == minor.Name {
-				candidates = append(candidates, a.Candidates[i])
+		for id, _ := range a.Candidates {
+			if a.Candidates[id].StoodIn == minor.Name {
+				candidates = append(candidates, a.Candidates[id])
 			}
 		}
 
