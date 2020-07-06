@@ -8,3 +8,11 @@ type Voter struct {
 	Ballot            []*Candidate
 	IsStillInterested bool
 }
+
+func (a *Voter) MakeNew(super *SuperConstituency) {
+
+	a.RegisteredIn = super
+	a.Weight = 1.0
+	a.IsStillInterested = true
+
+}

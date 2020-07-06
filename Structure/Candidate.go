@@ -8,17 +8,18 @@ import (
 )
 
 type Candidate struct {
-	Fname     string
-	Sname     string
-	Gender    string
-	WasMP     bool
-	Votes     int
-	StoodIn   string
-	Party     *Party
-	LiveVotes float64
-	ID        int
-	HasSeat   bool
-	Seat      *Seat
+	Fname      string
+	Sname      string
+	Gender     string
+	WasMP      bool
+	Votes      int
+	StoodIn    string
+	StandingIn *SuperConstituency
+	Party      *Party
+	LiveVotes  float64
+	ID         int
+	HasSeat    bool
+	Seat       *Seat
 }
 
 func (a *Candidate) MakeNewCandidate(row *Row, party *Party) {
@@ -35,6 +36,7 @@ func (a *Candidate) MakeNewCandidate(row *Row, party *Party) {
 		fmt.Println(err)
 	}
 	a.Votes = votes
+	a.LiveVotes = 0.00
 	a.StoodIn = row.Cols["constituency_name"].Data
 	a.Party = party
 	a.ID, _ = strconv.Atoi(row.Cols["index"].Data)

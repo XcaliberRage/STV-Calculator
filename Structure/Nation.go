@@ -1,7 +1,10 @@
 // Nation.go is a simple struct that ties all data together
 package Structure
 
-import "fmt"
+import (
+	"fmt"
+	"strings"
+)
 
 var Gb Nation
 
@@ -46,14 +49,41 @@ func (a *Nation) NewNation() {
 	// With the Candidates and Geography prepared, the Candidates need to be attirbuted to a Super Constituency
 
 	// For each SC
-	for _, country := range a.Countries {
-		for _, region := range country.Regions {
-			for _, sc := range region.Supers {
-				sc.FindCandidates()
-				sc.FindWinners()
+	for country, _ := range a.Countries {
+		for region, _ := range a.Countries[country].Regions {
+			for sc, _ := range a.Countries[country].Regions[region].Supers {
+				a.Countries[country].Regions[region].Supers[sc].FindCandidates()
+				//a.Countries[country].Regions[region].Supers[sc].FindWinners()
+				// This function replaces a function that simply reads a CSV table of all ballots
+				a.Countries[country].Regions[region].Supers[sc].MakeBallots()
+			}
+		}
+	}
+	fmt.Println("Ballots made")
+	fmt.Println("Candidates assigned")
+}
+
+func (a *Nation) RunElection() {
+
+	for country := range a.Countries {
+		for region, _ := range a.Countries[country].Regions {
+			for super, _ := range a.Countries[country].Regions[region].Supers {
+				a.Countries[country].Regions[region].Supers[super].NewLocalElection()
 			}
 		}
 	}
 
-	fmt.Println("Candidates assigned")
+}
+
+// Prints all candidates
+func (a *Nation) GiveCandidates() {
+
+	for party, _ := range a.Parties {
+		fmt.Printf("%s [%s] --------\n", strings.ToUpper(a.Parties[party].Name), a.Parties[party].Brev)
+		for member, _ := range a.Parties[party].Members {
+			fmt.Printf("%d	:	%s ->	votes %d [%.0f]\n", a.Parties[party].Members[member].ID, a.Parties[party].Members[member].Sname, a.Parties[party].Members[member].Votes, a.Parties[party].Members[member].LiveVotes)
+		}
+
+	}
+
 }

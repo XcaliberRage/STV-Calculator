@@ -7,6 +7,7 @@ import (
 	"fmt"
 	"os"
 	"os/exec"
+	"strconv"
 	"strings"
 )
 
@@ -41,11 +42,13 @@ func (a *Menu) NewReader() {
 }
 
 // Displays the primary screen
-func (a *Menu) MainMenu() string {
+func (a *Menu) MainMenu(should_wipe bool) string {
 
-	opts := []string{"1", "2", "3", "exit"}
+	opts := []string{"1", "2", "3", "4", "exit"}
 
-	a.WipeScreen()
+	if should_wipe {
+		a.WipeScreen()
+	}
 
 	menu := `
 -----WELCOME TO STV CALCULATOR-----
@@ -54,6 +57,7 @@ func (a *Menu) MainMenu() string {
 1.	Review Nation.
 2.	Review Parties.
 3.	Simulate STV.
+4.	Print Candidates
 exit	Quit
 
 Please select an option:
@@ -92,4 +96,61 @@ func IsIn(key string, array []string) bool {
 		}
 	}
 	return false
+}
+
+func (a *Menu) ReviewNation(nat *Nation) (string, bool) {
+
+	var action string
+	exit := "exit"
+
+	men_ct := len(nat.Countries)
+	opts := make([]string, men_ct+2)
+
+	for action != exit {
+		a.WipeScreen()
+		fmt.Println("The Nation")
+
+		for i := 0; i < men_ct; i++ {
+			fmt.Printf("%d.	%s\n", i+1, nat.Countries[i].Name)
+			opts = append(opts, strconv.Itoa(i+1))
+		}
+
+		opts = append(opts, exit)
+		opts = append(opts, "menu")
+		fmt.Printf("%s	Quit\n", exit)
+		fmt.Println("menu	Main Menu")
+
+		for {
+			action = a.WaitInput()
+
+			if !IsIn(action, opts) {
+				fmt.Println("Give a valid choice")
+				continue
+			}
+
+			break
+		}
+
+		wipe := false
+
+		if action == exit || action == "menu" {
+			wipe = true
+			return action, wipe
+		}
+
+		a.WipeScreen()
+		num, _ := strconv.Atoi(action)
+		country := nat.Countries[num-1]
+		fmt.Printf("%s:\n", country.Name)
+		fmt.Printf("Electorate: 	%d\n", country.Electorate)
+		fmt.Printf("Turnout: 	%d\n", country.ValidVotes)
+		fmt.Printf("	Regions: \n")
+		for k, _ := range country.Regions {
+			fmt.Printf("	%s\n", country.Regions[k].Name)
+		}
+
+		return "1", wipe
+
+	}
+	return action, false
 }

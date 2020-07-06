@@ -3,6 +3,13 @@
 package Structure
 
 type Seat struct {
-	MP                 Candidate
+	MP                 *Candidate
 	VotesRequiredToWin int
+	Super              *SuperConstituency
+	IsEmpty            bool
+}
+
+func (a *Seat) MakeNew(super *SuperConstituency) {
+	a.Super = super
+	a.IsEmpty = true
 }
