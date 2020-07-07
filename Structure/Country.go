@@ -8,6 +8,7 @@ type Country struct {
 	Electorate int
 	ValidVotes int
 	SeatsNum   int
+	CtSupers   int
 }
 
 func (a *Country) MakeCountry(name string) {
@@ -21,6 +22,7 @@ func (a *Country) MakeCountry(name string) {
 		r := Region{}
 		r.MakeRegion(region_name)
 		regions = append(regions, r)
+		a.CtSupers += r.CtSupers
 	}
 	a.Regions = regions
 

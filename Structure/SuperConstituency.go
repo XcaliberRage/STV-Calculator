@@ -144,16 +144,16 @@ func (a *SuperConstituency) MakeBallots() {
 				voter.MakeNew(a)
 
 				// Add this voter's first choice
-				voter.Ballot = append(voter.Ballot, a.Candidates[parties[party][member].ID])
+				voter.Ballot = append(voter.Ballot, parties[party][member].ID)
 
 				// Construct the ballot by going over each party member
 				for choice, _ := range parties[party] {
 					// Skip their first choice
-					if parties[party][choice].ID == voter.Ballot[0].ID {
+					if parties[party][choice].ID == voter.Ballot[0] {
 						continue
 					}
 
-					voter.Ballot = append(voter.Ballot, a.Candidates[parties[party][choice].ID])
+					voter.Ballot = append(voter.Ballot, parties[party][choice].ID)
 				}
 
 				a.Voters = append(a.Voters, voter)

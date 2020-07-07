@@ -8,10 +8,10 @@ import (
 
 func main() {
 
-	Structure.Sc_info.ReadNew("cons_info_test.csv")
+	Structure.Sc_info.ReadNew("cons_info.csv")
 	fmt.Printf("Number of rows = %d\n", Structure.Sc_info.Length)
 
-	Structure.Mp_info.ReadNew("votes_by_mp_test.csv")
+	Structure.Mp_info.ReadNew("votes_by_mp.csv")
 	fmt.Printf("Number of rows = %d\n", Structure.Mp_info.Length)
 
 	// A more practical system would only do this per Super instead of per nation

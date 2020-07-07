@@ -3,6 +3,7 @@ package Structure
 
 import (
 	"fmt"
+	"strconv"
 	"strings"
 )
 
@@ -11,6 +12,8 @@ var Gb Nation
 type Nation struct {
 	Countries []Country
 	Parties   []Party
+	CtSupers  int
+	CtSeats   int
 }
 
 // Takes both csv data structures and relates that into the overall data structure
@@ -25,6 +28,8 @@ func (a *Nation) NewNation() {
 
 		countries[index] = Country{}
 		countries[index].MakeCountry(country_name)
+		a.CtSupers += countries[index].CtSupers
+		a.CtSeats += countries[index].SeatsNum
 
 	}
 
@@ -69,10 +74,13 @@ func (a *Nation) RunElection() {
 		for region, _ := range a.Countries[country].Regions {
 			for super, _ := range a.Countries[country].Regions[region].Supers {
 				a.Countries[country].Regions[region].Supers[super].NewLocalElection()
+				e := Menu{}
+				e.NewReader()
+				action := e.WaitInput()
+				fmt.Println(action)
 			}
 		}
 	}
-
 }
 
 // Prints all candidates
@@ -86,4 +94,29 @@ func (a *Nation) GiveCandidates() {
 
 	}
 
+}
+
+// Provide information on each Party's performance
+func (a *Nation) GetStats() {
+
+	header := "--- ELECTION RESULTS FOR SIMULATED STV ACROSS GREAT BRITAIN AND NORTHERN ISLAND ---"
+	tab := "	"
+
+	subline := make([]string, 3)
+	subline[0] = tab + strconv.Itoa(a.CtSupers) + "Super Constitnuencies held elections awarding " + strconv.Itoa(a.CtSeats) + " seats and assumed nobody voted outside of their first choice party."
+	subline[1] = tab + "It was assumed each voter ordered their preference in order of most votes in real world (always putting their real world choice first however)."
+	subline[2] = "\n"
+
+	fmt.Println(header)
+	for _, line := range subline {
+		fmt.Println(line)
+	}
+
+	// For each party display information
+	// name			|	Brev|	CtMembers	|	RealVotes	|	VotesElect	|	Seats	|	Seats:VotesElect|	RealSeats:SeatsElect |	RealSeatHolder|	HoldElect |	% Hold Change
+	fmt.Println("name			|	Brev|	CtMembers|	RealVotes	|	VotesElect	|	Seats	|	Seats:VotesElect|	RealSeats:SeatsElect |	RealSeatHolder|	HoldElect |	% Hold Change")
+
+	for party, _ := range a.Parties {
+		fmt.Printf("%s 			| %s	|	%d |	%d | 	%.0f	|	%d 	|	")
+	}
 }

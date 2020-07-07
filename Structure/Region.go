@@ -8,6 +8,7 @@ type Region struct {
 	Electorate int
 	ValidVotes int
 	SeatsNum   int
+	CtSupers   int
 }
 
 // Assigns values to each region based on CSV data
@@ -24,6 +25,8 @@ func (a *Region) MakeRegion(name string) {
 		supers = append(supers, sc)
 	}
 	a.Supers = supers
+
+	a.CtSupers = len(a.Supers)
 
 	a.SumElectorate()
 	a.SumVotes()

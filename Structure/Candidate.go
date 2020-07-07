@@ -27,9 +27,6 @@ func (a *Candidate) MakeNewCandidate(row *Row, party *Party) {
 	a.Fname = row.Cols["firstname"].Data
 	a.Sname = row.Cols["surname"].Data
 	a.Gender = row.Cols["gender"].Data
-	if a.WasMP = false; row.Cols["former_mp"].Data == "Yes" {
-		a.WasMP = true
-	}
 
 	votes, err := strconv.Atoi(row.Cols["votes"].Data)
 	if err != nil {
@@ -39,6 +36,10 @@ func (a *Candidate) MakeNewCandidate(row *Row, party *Party) {
 	a.LiveVotes = 0.00
 	a.StoodIn = row.Cols["constituency_name"].Data
 	a.Party = party
+	if a.WasMP = false; row.Cols["former_mp"].Data == "Yes" {
+		a.WasMP = true
+		a.Party.RealSeats += 1
+	}
 	a.ID, _ = strconv.Atoi(row.Cols["index"].Data)
 	a.HasSeat = false
 

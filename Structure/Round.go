@@ -44,15 +44,21 @@ func (a *LocalElection) RunRound() {
 	for k, _ := range a.RunningCandidates {
 		fmt.Printf("%d	->	 %s[%s] 	= %d[%.0f]\n", a.RunningCandidates[k].ID, a.RunningCandidates[k].Sname, a.RunningCandidates[k].Party.Brev, a.RunningCandidates[k].Votes, a.RunningCandidates[k].LiveVotes)
 	}
-	fmt.Printf("\n\n")
+	fmt.Printf("\n")
+
+	fmt.Printf("%d Seats in this Super\n\n", a.Super.SeatsNum)
 
 	// When All seats are filled, stop running rounds
 	for !a.SeatsFilled {
 
 		rounds++
+
+		fmt.Printf("ROUND %d\n\n", rounds)
 		// If the number of available seats left is equal to or greater than the number of
 		// remaining candidates, then just award all candidates a seat and stop
-		if a.EmptySeats >= len(a.RunningCandidates) {
+		num_running_candidates := len(a.RunningCandidates)
+		if a.EmptySeats >= num_running_candidates {
+			fmt.Printf("a.EmptySeats (%d) >= num_running_candidates (%d)\n", a.EmptySeats, num_running_candidates)
 			for candidate, _ := range a.RunningCandidates {
 				a.GiveSeat(a.Super.SeatsNum-a.EmptySeats, a.RunningCandidates[candidate])
 			}
@@ -61,16 +67,19 @@ func (a *LocalElection) RunRound() {
 		}
 
 		// If there are no more candidates then remaining seats go empty
-		if len(a.RunningCandidates) == 0 {
+		if num_running_candidates == 0 {
 			a.SeatsFilled = true
 			fmt.Println("NO MORE CANDIDATES FOR SEATS")
 		}
 
 		a.ValidVotes = 0
+		fmt.Printf("Reset Valid votes to %.0f\n", a.ValidVotes)
 
+		fmt.Println("Resetting canidate votes")
 		for k, _ := range a.RunningCandidates {
 			a.RunningCandidates[k].LiveVotes = 0
 		}
+		fmt.Println("Candidate Votes reset")
 
 		// e := Menu{}
 		// e.NewReader()
@@ -78,18 +87,23 @@ func (a *LocalElection) RunRound() {
 		// fmt.Println(action)
 
 		// Award each candidates votes as per the voters' weight
+		fmt.Println("Counting Candidate votes")
 		length := len(a.Voters)
+		fmt.Printf("Voter count = %d\n", length)
 		voter := 0
 		for voter < length {
-			//fmt.Printf("Looking @ (%d): \n", a.Voters[voter].Ballot[0].ID)
+			//fmt.Printf("Looking @ (%d): \n", a.Voters[voter].Ballot[0])
 			//fmt.Println(a.Voters[voter])
 			if a.Voters[voter].IsStillInterested {
-				id := a.Voters[voter].Ballot[0].ID
+				id := a.Voters[voter].Ballot[0]
+				//fmt.Printf("%d Interested voter gives %.2f to %d\n", voter, a.Voters[voter].Weight, id)
 				a.RunningCandidates[id].LiveVotes += a.Voters[voter].Weight
 				a.ValidVotes += a.Voters[voter].Weight
-				voter++
+
 			}
+			voter++
 		}
+		fmt.Println("Candidate votes counted")
 
 		// Get a running order of candidates, highest to lowest
 		var ordered_candidates []*Candidate
@@ -131,6 +145,8 @@ func (a *LocalElection) RunRound() {
 		if len(winners) > 0 {
 
 			a.SetWinners(winners)
+
+			fmt.Println("Winners set")
 
 			continue
 		}
@@ -211,6 +227,7 @@ func (a *LocalElection) SetWinners(winners []*Candidate) {
 		a.GiveSeat(i, winners[candidate_index])
 		i++
 
+		fmt.Printf("Removing %d from race\n", winners[candidate_index].ID)
 		for ballot, _ := range a.Voters {
 
 			// Ignore Ballots that have pulled out
@@ -218,17 +235,19 @@ func (a *LocalElection) SetWinners(winners []*Candidate) {
 				continue
 			}
 
-			// Remove this candidate
-			a.RemoveFromBallot(winners[candidate_index].ID, ballot)
-
 			// Set the weight
-			if a.Voters[ballot].IsStillInterested {
+			if a.Voters[ballot].IsStillInterested && a.Voters[ballot].Ballot[0] == winners[candidate_index].ID {
 				a.Voters[ballot].Weight = a.Voters[ballot].Weight * ((winners[candidate_index].LiveVotes - a.DroopQuota) / winners[candidate_index].LiveVotes)
 			}
 
+			// Remove this candidate
+			a.RemoveFromBallot(winners[candidate_index].ID, ballot)
+
 		}
+		fmt.Println("	Candidate removed from ballots")
 
 		a.EliminateCandidate(winners[candidate_index].ID)
+		fmt.Println("Candidate removed from race")
 	}
 
 }
@@ -239,7 +258,7 @@ func (a *LocalElection) RemoveFromBallot(target_id int, ballot int) {
 	// Look for the ID and identify the candidate_index
 	for i, _ := range a.Voters[ballot].Ballot {
 		blep := a.Voters[ballot]
-		if blep.Ballot[i].ID == target_id {
+		if blep.Ballot[i] == target_id {
 			index = i
 			target_found = true
 			break
@@ -247,7 +266,13 @@ func (a *LocalElection) RemoveFromBallot(target_id int, ballot int) {
 	}
 
 	if target_found {
+		// fmt.Printf("Before: (target %d @ %d)", target_id, index)
+		// fmt.Print(a.Voters[ballot].Ballot)
+		// fmt.Printf("\n")
 		a.SliceOut(index, ballot)
+		// fmt.Printf("After: ")
+		// fmt.Print(a.Voters[ballot].Ballot)
+		// fmt.Printf("\n")
 	}
 }
 
@@ -257,36 +282,25 @@ func (a *LocalElection) SliceOut(index int, ballot int) {
 	// If it's the last candidate this voter cared about, strike them out of future counts
 	length := len(a.Voters[ballot].Ballot)
 	if length == 1 {
-		fmt.Printf("ELIMINATE BALLOT")
 		a.Voters[ballot].IsStillInterested = false
 		a.Voters[ballot].Ballot = nil
 		return
 	}
 
 	// Otherwise, pull the candidate out of the ballot
-	i := 0
-	found := false
-	for i < length {
-		t := i
-		if i == index {
-			found = true
-			i++
-		}
-
-		if i < length {
-			a.Voters[ballot].Ballot[t] = a.Voters[ballot].Ballot[i]
-		}
-		i++
+	a.Voters[ballot].Ballot[index] = 0
+	for i := index; i < length-1; i++ {
+		a.Voters[ballot].Ballot[i] = a.Voters[ballot].Ballot[i+1]
 	}
-	if found {
-		a.Voters[ballot].Ballot = a.Voters[ballot].Ballot[:length-1]
-	}
+	a.Voters[ballot].Ballot = a.Voters[ballot].Ballot[:length-1]
 }
 
 // GiveSeat handles awarding a seat to candidate
 // Takes i as an index reference to the given seat and candidate as a pointer to the winning candidate
 func (a *LocalElection) GiveSeat(i int, candidate *Candidate) {
 	a.Super.Seats[i].MP = candidate
+	candidate.HasSeat = true
+	candidate.Party.RealSeats += 1
 	a.Super.Seats[i].IsEmpty = false
 
 	if candidate.LiveVotes < a.DroopQuota {
@@ -296,6 +310,8 @@ func (a *LocalElection) GiveSeat(i int, candidate *Candidate) {
 	}
 
 	a.EmptySeats--
+
+	fmt.Printf("Seat %d awarded, %d Empty seats remain %d Seats Filled\n", i+1, a.EmptySeats, a.Super.SeatsNum-a.EmptySeats)
 	if a.EmptySeats == 0 {
 		a.SeatsFilled = true
 	}

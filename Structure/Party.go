@@ -3,10 +3,16 @@
 package Structure
 
 type Party struct {
-	Name    string
-	Brev    string
-	Members []Candidate
-	Votes   int
+	Name       string
+	Brev       string
+	Members    []Candidate
+	RealVotes  int
+	VotesElect int
+	CtMembers  int
+	RealSeats  int
+	SeatsElect int
+	RealHold   float64
+	HoldElect  float64
 }
 
 func (a *Party) MakeParty(name string) {
@@ -29,6 +35,9 @@ func (a *Party) MakeParty(name string) {
 		mp := Candidate{}
 		mp.MakeNewCandidate(&row, a)
 		a.Members = append(a.Members, mp)
+		a.RealVotes += mp.Votes
 	}
+
+	a.CtMembers = len(a.Members)
 
 }

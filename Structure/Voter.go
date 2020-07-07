@@ -5,7 +5,7 @@ package Structure
 type Voter struct {
 	RegisteredIn      *SuperConstituency
 	Weight            float64
-	Ballot            []*Candidate
+	Ballot            []int // Holds ID reference to a candidate
 	IsStillInterested bool
 }
 
